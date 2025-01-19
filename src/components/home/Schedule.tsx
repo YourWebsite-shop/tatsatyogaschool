@@ -35,7 +35,7 @@ const Schedule: React.FC = () => {
             className="grid md:grid-cols-2 gap-8 animate__animated animate__fadeInUp"
             id="el-04c2lfcv"
           >
-            <div className="bg-neutral-200 rounded-lg p-6" id="el-s1b5se4z">
+            <div className="shadow-lg bg-gray-50 rounded-lg p-6" id="el-s1b5se4z">
               <h3
                 className="text-xl font-semibold text-[#E67825] mb-6"
                 id="el-47pfivfb"
@@ -111,7 +111,7 @@ const Schedule: React.FC = () => {
               </div>
             </div>
 
-            <div className="bg-neutral-200 rounded-lg p-6" id="el-z686gvxs">
+            <div className="shadow-lg bg-gray-50 rounded-lg p-6" id="el-z686gvxs">
               <h3
                 className="text-xl font-semibold text-[#E67825] mb-6"
                 id="el-w3pz7f4s"
@@ -206,9 +206,9 @@ const Schedule: React.FC = () => {
                 id="el-we66fng8"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M17 8l4 4m0 0l-4 4m4-4H3"
                   id="el-g7285lja"
                 ></path>

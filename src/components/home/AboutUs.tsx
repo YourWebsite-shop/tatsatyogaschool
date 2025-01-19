@@ -93,9 +93,9 @@ const AboutUs: React.FC = () => {
                   id="el-z824fnfw"
                 >
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth="2"
                     d="M17 8l4 4m0 0l-4 4m4-4H3"
                     id="el-8wr5y69r"
                   ></path>
@@ -128,7 +128,7 @@ const AboutUs: React.FC = () => {
                     r="48"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="1"
+                    strokeWidth="1"
                     id="el-zy3ifdsv"
                   >
                     <animate
@@ -146,7 +146,7 @@ const AboutUs: React.FC = () => {
                     r="38"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="1"
+                    strokeWidth="1"
                     id="el-4r84mwhg"
                   >
                     <animate
@@ -164,7 +164,7 @@ const AboutUs: React.FC = () => {
                     r="28"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="1"
+                    strokeWidth="1"
                     id="el-wfsf8ltr"
                   >
                     <animate
@@ -182,7 +182,7 @@ const AboutUs: React.FC = () => {
                     r="18"
                     fill="none"
                     stroke="currentColor"
-                    stroke-width="1"
+                    strokeWidth="1"
                     id="el-4yz7s7px"
                   >
                     <animate
