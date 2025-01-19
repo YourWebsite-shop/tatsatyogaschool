@@ -21,7 +21,7 @@ const ContactDetail = ({
   </div>
 );
 
-const Contact = () => {
+const ContactUs = () => {
   return (
     <div>
       <section id="contact" className="py-20 bg-white">
@@ -103,7 +103,7 @@ const Contact = () => {
                   <textarea
                     id="message"
                     name="message"
-                    rows= "4"
+                    rows="4"
                     className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800 "
                   ></textarea>
                 </div>
@@ -228,4 +228,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default ContactUs;
