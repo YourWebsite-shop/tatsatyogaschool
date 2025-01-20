@@ -121,7 +121,7 @@ const ContactUs = () => {
             <div className="space-y-8 ">
               <div className="bg-white p-8 rounded-lg shadow-sm">
                 <h3 className="text-[16px] sm:text-[36px] lg:text-[48px] font-semibold text-neutral-800 mb-6">
-                  Contact Information
+                  Have Questions? Get In Touch
                 </h3>
                 <ContactDetail
                   icon={
