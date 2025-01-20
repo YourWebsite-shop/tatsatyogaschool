@@ -201,7 +201,7 @@ const Footer: React.FC = () => {
               <ul className="space-y-3" id="el-pqjh45av">
                 <li className="flex items-start" id="el-gdu6ycqy">
                   <svg
-                    className="w-6 h-6 text-[#E67825] mt-1 mr-3"
+                    className="w-6 h-6 lg:w-10 lg:h-10 text-[#E67825] mr-3"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"

@@ -5,7 +5,7 @@ const AboutUs: React.FC = () => {
     <div>
       <section
         id="about"
-        className="relative py-24 bg-gradient-to-b from-neutral-50 to-white overflow-hidden"
+        className="relative pt-[60px] sm:pt-[80px] bg-gradient-to-b from-neutral-50 to-white overflow-hidden"
       >
         <div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"

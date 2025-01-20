@@ -1,7 +1,10 @@
+"use client";
 import React, { ReactElement } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { Menu, MenuButton, MenuList, MenuItem, Button } from "@chakra-ui/react";
+import { IoChevronDown } from "react-icons/io5";
 
 const ContactDetail = ({
   icon,
@@ -24,14 +27,20 @@ const ContactDetail = ({
 const ContactUs = () => {
   return (
     <div>
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="pt-[60px] sm:pt-[80px] bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl font-sanskrit text-[#E67825] mb-6">
+          <div
+            className="text-center mb-16 animate__animated animate__fadeIn"
+            id="el-d9xysvqk"
+          >
+            <h2 className="text-4xl font-bold text-Black mb-4" id="el-sfukqcej">
               Begin Your Journey
             </h2>
-            <div className="w-20 h-1 bg-[#E67825] mx-auto mb-8"></div>
-            <p className="text-gray-500 max-w-2xl mx-auto">
+            <div
+              className="w-24 h-1 bg-[#E67825] mx-auto mb-6"
+              id="el-3zj1b12y"
+            ></div>
+            <p className="text-xl text-gray-500" id="el-bvy7ul6w">
               Take the first step towards transformation. Contact us for more
               information about our programs.
             </p>
@@ -40,63 +49,88 @@ const ContactUs = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Form Section */}
             <div>
-              <form className="space-y-6">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-neutral-600"
-                  >
-                    Full Name *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800  "
-                  />
+              <form className="">
+                <div className="flex sm:flex-row justify-between py-6 ">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm text-neutral-600 font-semibold"
+                    >
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800  "
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="Phone"
+                      className="block text-sm font-semibold text-neutral-600"
+                    >
+                      Phone *
+                    </label>
+                    <input
+                      type="text"
+                      id="Phone"
+                      name="Phone"
+                      required
+                      className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800  "
+                    />
+                  </div>
                 </div>
 
-                <div>
-                  <label
-                    htmlFor="email"
-                    className="block text-sm font-medium text-neutral-600"
-                  >
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800 "
-                  />
-                </div>
-
-                <div>
-                  <label
-                    htmlFor="program"
-                    className="block text-sm font-medium text-neutral-600"
-                  >
-                    Program Interest *
-                  </label>
-                  <select
-                    id="program"
-                    name="program"
-                    required
-                    className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800 "
-                  >
-                    <option value="">Select a Program</option>
-                    <option value="200hr">200 Hour YTT</option>
-                    <option value="300hr">300 Hour YTT</option>
-                    <option value="dropin">Drop-in classes</option>
-                  </select>
+                <div className="flex sm:flex-row justify-between py-6">
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-semibold text-neutral-600"
+                    >
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800 "
+                    />
+                  </div>
+                  <div className="pr-8">
+                    <label
+                      htmlFor="program"
+                      className="block text-sm font-semibold text-neutral-600 pb-4"
+                    >
+                      Program Interest *
+                    </label>
+                    <Menu>
+                      <MenuButton
+                        as={Button}
+                        rightIcon={<IoChevronDown />}
+                        w="full"
+                        py={3}
+                        px={4}
+                        borderBottom="2px"
+                        borderColor="#98A2B3"
+                      >
+                        Select a Program
+                      </MenuButton>
+                      <MenuList w="full">
+                        <MenuItem>200 Hour YTT</MenuItem>
+                        <MenuItem>300 Hour YTT</MenuItem>
+                        <MenuItem>Drop-in classes</MenuItem>
+                      </MenuList>
+                    </Menu>
+                  </div>
                 </div>
 
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-neutral-600"
+                    className="block text-sm font-semibold text-neutral-600"
                   >
                     Message
                   </label>
@@ -110,7 +144,7 @@ const ContactUs = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#E67825] text-neutral-900 py-3 px-6 rounded-md hover:bg-[#E6782590] transition-colors duration-300"
+                  className="w-full bg-[#E67825] text-neutral-900 py-3 px-6 rounded-md hover:bg-[#E6782590] transition-colors duration-300 mt-8"
                 >
                   Send Message
                 </button>
@@ -121,12 +155,12 @@ const ContactUs = () => {
             <div className="space-y-8 ">
               <div className="bg-white p-8 rounded-lg shadow-sm">
                 <h3 className="text-[16px] sm:text-[36px] lg:text-[48px] font-semibold text-neutral-800 mb-6">
-                  Have Questions? Get In Touch
+                  Contact us
                 </h3>
                 <ContactDetail
                   icon={
                     <svg
-                      className="w-6 h-6 text-[#E67825] mt-1 mr-4"
+                      className="w-6 h-6 text-[#E67825] mt-1 mr-4 mb-2"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -147,13 +181,13 @@ const ContactUs = () => {
                       ></path>
                     </svg>
                   }
-                  title="Location"
+                  title=""
                   description="Laxman Jhula Road, Rishikesh, Uttarakhand, India"
                 />
                 <ContactDetail
                   icon={
                     <svg
-                      className="w-6 h-6 text-[#E67825] mt-1 mr-4"
+                      className="w-6 h-6 text-[#E67825] mt-1 mr-4 mb-2"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -167,7 +201,7 @@ const ContactUs = () => {
                       ></path>
                     </svg>
                   }
-                  title="Email"
+                  title=""
                   description="info@tatsatyoga.com"
                 />
                 <ContactDetail
@@ -187,7 +221,7 @@ const ContactUs = () => {
                       ></path>
                     </svg>
                   }
-                  title="Phone"
+                  title=""
                   description="+91 123 456 7890"
                 />
 

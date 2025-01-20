@@ -3,29 +3,23 @@ import React from "react";
 const Schedule: React.FC = () => {
   return (
     <div>
-      <section
-        id="schedule"
-        className="py-20 bg-white"
-      >
+      <section id="schedule" className="pt-[60px] sm:pt-[80px] bg-white">
         <div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
           id="el-72fiaeo5"
         >
           <div
             className="text-center mb-16 animate__animated animate__fadeIn"
-            id="el-epbuafh8"
+            id="el-d9xysvqk"
           >
-            <h2
-              className="text-3xl font-sanskrit text-[#E67825] mb-6"
-              id="el-bsc3vdjw"
-            >
+            <h2 className="text-4xl font-bold text-Black mb-4" id="el-sfukqcej">
               Daily Schedule
             </h2>
             <div
-              className="w-20 h-1 bg-[#E67825] mx-auto mb-8"
-              id="el-t3yr8ce0"
+              className="w-24 h-1 bg-[#E67825] mx-auto mb-6"
+              id="el-3zj1b12y"
             ></div>
-            <p className="text-gray-500 max-w-2xl mx-auto" id="el-irxcu9r1">
+            <p className="text-xl text-gray-500" id="el-bvy7ul6w">
               Experience a day of transformation through our carefully curated
               schedule
             </p>
@@ -35,7 +29,10 @@ const Schedule: React.FC = () => {
             className="grid md:grid-cols-2 gap-8 animate__animated animate__fadeInUp"
             id="el-04c2lfcv"
           >
-            <div className="shadow-lg bg-gray-50 rounded-lg p-6" id="el-s1b5se4z">
+            <div
+              className="shadow-lg bg-gray-50 rounded-lg p-6"
+              id="el-s1b5se4z"
+            >
               <h3
                 className="text-xl font-semibold text-[#E67825] mb-6"
                 id="el-47pfivfb"
@@ -111,7 +108,10 @@ const Schedule: React.FC = () => {
               </div>
             </div>
 
-            <div className="shadow-lg bg-gray-50 rounded-lg p-6" id="el-z686gvxs">
+            <div
+              className="shadow-lg bg-gray-50 rounded-lg p-6"
+              id="el-z686gvxs"
+            >
               <h3
                 className="text-xl font-semibold text-[#E67825] mb-6"
                 id="el-w3pz7f4s"

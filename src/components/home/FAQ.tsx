@@ -130,7 +130,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
       borderRadius="md"
       maxW="100%"
       mr={8}
-      background="linear-gradient(96.56deg, rgba(194, 218, 218, 0.3) 27.8%, rgba(240, 237, 226, 0.3) 53.91%)"
+      background="linear-gradient(96.56deg, rgba(230, 120, 37, 0.3) 27.8%, rgba(240, 237, 226, 0.3) 53.91%)"
     >
       {({ isExpanded }: { isExpanded: boolean }) => (
         <>
@@ -191,8 +191,9 @@ const Faq: React.FC = () => {
       w="100%"
       maxW="1480px"
       mx={4}
-      py={{ base: 32, lg: "120px" }}
+      
       px={{ base: 6, lg: 12, "2xl": 20 }}
+      className="pt-[60px] sm:pt-[80px]"
     >
       <Box textAlign="start" mb={8} w={{ base: "100%", md: "35%" }}>
         <Heading
