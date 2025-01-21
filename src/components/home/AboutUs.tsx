@@ -5,7 +5,7 @@ const AboutUs: React.FC = () => {
     <div>
       <section
         id="about"
-        className="relative pt-[60px] sm:pt-[80px] bg-gradient-to-b from-neutral-50 to-white overflow-hidden"
+        className="relative mt-[80px] sm:mt-[100px] lg:mt-[120px] pt-[40px] sm:pt-[50px] lg:pt-[60px]  bg-gradient-to-b from-neutral-50 to-white overflow-hidden"
       >
         <div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
@@ -21,13 +21,13 @@ const AboutUs: React.FC = () => {
             >
               <div className="space-y-4" id="el-bejuwq57">
                 <h2
-                  className="text-4xl md:text-5xl font-sanskrit text-neutral-800 leading-tight"
+                  className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black leading-tight"
                   id="el-xf6qvkzw"
                 >
                   Discover Your True Self
                 </h2>
                 <div
-                  className="w-24 h-1.5 bg-[#E67825] rounded-full"
+                  className="lg:w-[96px] sm:w-[80px] w-[72px] h-1.5 bg-[#E67825] rounded-full"
                   id="el-ibwdfxo2"
                 ></div>
               </div>

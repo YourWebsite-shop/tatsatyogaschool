@@ -193,11 +193,11 @@ const Faq: React.FC = () => {
       mx={4}
       
       px={{ base: 6, lg: 12, "2xl": 20 }}
-      className="pt-[60px] sm:pt-[80px]"
+      className="mt-[80px] sm:mt-[100px] lg:mt-[120px]"
     >
       <Box textAlign="start" mb={8} w={{ base: "100%", md: "35%" }}>
         <Heading
-          fontSize={{ base: "28px", lg: "45px" }}
+          fontSize={{ base: "24px", sm:"28px", lg: "36px" }}
           fontWeight={600}
           mb={6}
         >

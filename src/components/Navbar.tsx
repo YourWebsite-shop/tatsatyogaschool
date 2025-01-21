@@ -40,7 +40,7 @@ const Navbar = () => {
       href={path}
       _hover={{
         textDecoration: "none",
-        bg: "#E67825",
+        color: "#E67825",
       }}
       _activeLink={{
         fontWeight: "bold",
@@ -59,7 +59,7 @@ const Navbar = () => {
           <Image src={logo} alt="Logo" width={70} height={70} />
         </Box>
 
-        {/* Hamburger Menu for Mobile */}
+        
         <IconButton
           size="md"
           icon={isOpen ? <IoCloseSharp /> : <GiHamburgerMenu />}
@@ -71,7 +71,7 @@ const Navbar = () => {
           _active={{ background: "transparent" }}
         />
 
-        {/* Links for Larger Screens */}
+        
         <HStack as="nav" spacing={4} display={{ base: "none", md: "flex" }}>
           {Links.map((link) => (
             <NavLink key={link.name} path={link.path}>

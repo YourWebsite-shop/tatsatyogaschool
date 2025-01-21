@@ -4,14 +4,18 @@ import Marquee from "react-fast-marquee";
 const MarqCarousel = () => {
   return (
     <div>
-      <h2 className="text-4xl font-bold text-Black text-center mb-4" id="el-sfukqcej">
-              Trusted by the best
-            </h2>
-            <div
-              className="w-24 h-1 bg-[#E67825] mx-auto mb-6"
-              id="el-3zj1b12y"
-            ></div>
-            
+      <h2
+        className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black lg:mb-4 sm:mb-2 mb-1 text-center"
+        id="el-sfukqcej"
+      >
+        Trusted by the best
+      </h2>
+      <div
+        className="lg:w-[96px] sm:w-[80px] w-[72px] h-1 bg-[#E67825] mx-auto lg:mb-6 sm:mb-5 mb-3"
+        id="el-3zj1b12y"
+      ></div>
+      
+
       <Marquee>
         <div style={{ marginRight: "60px" }}>
           <p>yoga1</p>

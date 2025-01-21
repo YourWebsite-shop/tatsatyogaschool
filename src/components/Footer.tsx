@@ -3,7 +3,7 @@ import React from "react";
 const Footer: React.FC = () => {
   return (
     <div>
-      <footer id="footer" className="bg-neutral-100 pt-20 pb-10">
+      <footer id="footer" className="bg-neutral-100 pt-20 pb-10 mt-[80px] sm:mt-[100px] lg:mt-[120px]">
         <div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
           id="el-djps6tzb"

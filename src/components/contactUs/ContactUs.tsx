@@ -27,20 +27,29 @@ const ContactDetail = ({
 const ContactUs = () => {
   return (
     <div>
-      <section id="contact" className="pt-[60px] sm:pt-[80px] bg-white">
+      <section
+        id="contact"
+        className="mt-[80px] sm:mt-[100px] lg:mt-[120px] bg-white"
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="text-center mb-16 animate__animated animate__fadeIn"
             id="el-d9xysvqk"
           >
-            <h2 className="text-4xl font-bold text-Black mb-4" id="el-sfukqcej">
+            <h2
+              className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black lg:mb-4 sm:mb-2 mb-1"
+              id="el-sfukqcej"
+            >
               Begin Your Journey
             </h2>
             <div
-              className="w-24 h-1 bg-[#E67825] mx-auto mb-6"
+              className="lg:w-[96px] sm:w-[80px] w-[72px] h-1 bg-[#E67825] mx-auto lg:mb-6 sm:mb-5 mb-3"
               id="el-3zj1b12y"
             ></div>
-            <p className="text-xl text-gray-500" id="el-bvy7ul6w">
+            <p
+              className="lg:text-[20px] sm:text-[16px] text-[16px] text-gray-500"
+              id="el-bvy7ul6w"
+            >
               Take the first step towards transformation. Contact us for more
               information about our programs.
             </p>
@@ -231,7 +240,6 @@ const ContactUs = () => {
                   <FaXTwitter className="text-[#E67825]" />
                 </div>
               </div>
-     
             </div>
           </div>
           {/* map */}
