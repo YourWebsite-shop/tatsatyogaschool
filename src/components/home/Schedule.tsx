@@ -3,7 +3,7 @@ import React from "react";
 const Schedule: React.FC = () => {
   return (
     <div>
-      <section id="schedule" className="pt-[60px] sm:pt-[80px] bg-white">
+      <section id="schedule" className=" mt-[80px] sm:mt-[100px]  lg:mt-[120px] bg-white">
         <div
           className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
           id="el-72fiaeo5"

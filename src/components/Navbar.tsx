@@ -4,7 +4,6 @@ import {
   Flex,
   HStack,
   IconButton,
-  Button,
   useDisclosure,
   Stack,
   Link,
@@ -14,6 +13,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import NextLink from "next/link";
 import logo from "@/assets/Logo.png";
 import Image from "next/image";
+import { ReactNode } from "react";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -31,7 +31,7 @@ const Navbar = () => {
     path: string; // Expects a string for the path
   };
 
-  const NavLink = ({ children, path }) => (
+  const NavLink = ({ children, path }:{children:ReactNode, path:string}) => (
     <Link
       as={NextLink}
       px={3}

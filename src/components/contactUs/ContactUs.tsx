@@ -63,7 +63,7 @@ const ContactUs = () => {
                       id="name"
                       name="name"
                       required
-                      className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800  "
+                      className="mt-1 block w-full py-1 pr-4 border-b border-b-neutral-800 focus:outline-none "
                     />
                   </div>
                   <div>
@@ -78,7 +78,7 @@ const ContactUs = () => {
                       id="Phone"
                       name="Phone"
                       required
-                      className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800  "
+                      className="mt-1 block w-full py-1 pr-4 border-b border-b-neutral-800 focus:outline-none "
                     />
                   </div>
                 </div>
@@ -96,7 +96,7 @@ const ContactUs = () => {
                       id="email"
                       name="email"
                       required
-                      className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800 "
+                      className="mt-1 block w-full py-1 pr-4 border-b border-b-neutral-800 focus:outline-none"
                     />
                   </div>
                   <div className="pr-8">
@@ -138,7 +138,7 @@ const ContactUs = () => {
                     id="message"
                     name="message"
                     rows="4"
-                    className="mt-1 block w-full py-3 px-4 border-b border-b-neutral-800 "
+                    className="mt-1 block w-full py-1 pr-4 border-b border-b-neutral-800 focus:outline-none"
                   ></textarea>
                 </div>
 
@@ -231,19 +231,7 @@ const ContactUs = () => {
                   <FaXTwitter className="text-[#E67825]" />
                 </div>
               </div>
-              {/* Socials Section */}
-              {/* <div className="space-y-8">
-                <div className="bg-white p-8 rounded-lg shadow-sm">
-                  <h3 className="text-xl font-semibold text-neutral-800 mb-6">
-                    Contact with us
-                  </h3>
-                  <div className="flex flex-row gap-6 text-[20px]">
-                    <FaFacebook className="text-[#E67825]" />
-                    <FaInstagram className="text-[#E67825]" />
-                    <FaXTwitter className="text-[#E67825]" />
-                  </div>
-                </div>
-              </div> */}
+     
             </div>
           </div>
           {/* map */}

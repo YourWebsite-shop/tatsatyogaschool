@@ -3,7 +3,7 @@ import React from "react";
 const Programs: React.FC = () => {
   return (
     <div>
-      <section id="programs" className="pt-[60px] sm:pt-[80px] bg-neutral-100">
+      <section id="programs" className="pt-[60px] sm:pt-[80px] pb-[80px] bg-neutral-100">
         <div className="container mx-auto px-4" id="el-4q87rm7l">
           <div
             className="text-center mb-16 animate__animated animate__fadeIn"
