@@ -1,44 +1,40 @@
 "use client";
-import React, { ReactElement } from "react";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import {
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
+
   Button,
   Stack,
   Grid,
   FormControl,
   HStack,
-  Icon,
+
   Input,
   Textarea,
   Checkbox,
 } from "@chakra-ui/react";
-import { IoChevronDown } from "react-icons/io5";
-import { Flex, Box, Heading, Text } from "@chakra-ui/react";
-import { color } from "framer-motion";
 
-const ContactDetail = ({
-  icon,
-  title,
-  description,
-}: {
-  icon: ReactElement;
-  title: string;
-  description: string;
-}) => (
-  <div className="flex items-start">
-    {icon}
-    <div>
-      <h4 className="font-medium text-neutral-800">{title}</h4>
-      <p className="text-neutral-600">{description}</p>
-    </div>
-  </div>
-);
+import { Flex, Box, Heading, Text } from "@chakra-ui/react";
+
+
+// const ContactDetail = ({
+//   icon,
+//   title,
+//   description,
+// }: {
+//   icon: ReactElement;
+//   title: string;
+//   description: string;
+// }) => (
+//   <div className="flex items-start">
+//     {icon}
+//     <div>
+//       <h4 className="font-medium text-neutral-800">{title}</h4>
+//       <p className="text-neutral-600">{description}</p>
+//     </div>
+//   </div>
+// );
 
 const ContactUs = () => {
   return (
