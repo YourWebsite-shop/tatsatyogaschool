@@ -49,8 +49,8 @@ const Gallery = () => {
             <Image
               src={gallery9}
               alt="camio"
-              width={400}
-              height={420}
+              width={1000}
+              height={1000}
               className="w-full rounded-2xl"
             />
           </Box>
@@ -59,8 +59,8 @@ const Gallery = () => {
               <Image
                 src={gallery2}
                 alt="carimage"
-                width={400}
-                height={300}
+                width={1000}
+                height={1000}
                 className="w-full rounded-2xl"
               />
             </Box>
@@ -69,19 +69,19 @@ const Gallery = () => {
                 src={gallery3}
                 alt="logo"
                 className="w-full rounded-2xl"
-                height={120}
-                width={400}
+                height={1000}
+                width={1000}
               />
             </Box>
           </Box>
         </Flex>
-        <Box width={"100%"} p={2} display={{ base: "none", lg: "block" }}>
+        <Box width={"100%"} p={0} display={{ base: "none", lg: "block" }}>
           <Image
             src={gallery4}
             alt="camio"
-            width={800}
-            height={60}
-            className="w-full rounded-2xl"
+            width={1000}
+            height={1000}
+            className="w-1/2 rounded-2xl"
           />
         </Box>
       </Box>
@@ -95,20 +95,20 @@ const Gallery = () => {
             src={gallery5}
             alt="logo"
             className="w-full rounded-2xl"
-            height={60}
-            width={400}
+            height={1000}
+            width={1000}
           />
         </Box>
         <Box p={2}>
           <Image
             src={gallery10}
             alt="camio"
-            width={400}
-            height={520}
+            width={1000}
+           
             className="h-full w-full rounded-2xl object-fill "
           />
         </Box>
-        {/* <Box><Image src={camio} alt='camio' width={400} height={300} className='w-full' /></Box> */}
+
       </Flex>
     </Flex>
   );

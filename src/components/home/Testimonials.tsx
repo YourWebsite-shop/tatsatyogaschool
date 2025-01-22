@@ -21,9 +21,9 @@ const TestimonialCard = ({
 }) => {
   return (
     <div className="bg-white p-8 rounded-lg shadow-lg relative animate__animated animate__fadeIn">
-      <div className="absolute top-0 right-0 w-20 h-20 bg-yellow-500/10 rounded-bl-full"></div>
+      <div className="absolute top-0 right-0 w-20 h-20 bg-yellow-400 rounded-bl-full"></div>
       <svg
-        className="w-12 h-12 text-yellow-500/20 mb-6"
+        className="w-12 h-12 text-yellow-400 mb-6"
         fill="currentColor"
         viewBox="0 0 32 32"
       >
@@ -32,13 +32,13 @@ const TestimonialCard = ({
       <p className="text-neutral-600 mb-6 relative z-10">{quote}</p>
       <div className="flex items-center">
         <div className="ml-4">
-          <p className="font-semibold text-neutral-800">{author}</p>
+          <p className="font-semibold text-neutral-800 -translate-x-4">{author}</p>
           <p className="text-sm text-neutral-600">{role}</p>
           <div className="flex items-center mt-2">
             {[...Array(rating)].map((_, i) => (
               <svg
                 key={i}
-                className="w-5 h-5 text-yellow-500"
+                className="w-5 h-5 text-yellow-400"
                 fill="currentColor"
                 viewBox="0 0 20 20"
                 aria-hidden="true"

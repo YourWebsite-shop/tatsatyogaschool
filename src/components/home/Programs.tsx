@@ -13,18 +13,19 @@ interface Program {
 
 const programsData: Program[] = [
   {
-    id: 1,
+    id: 3,
     icon: <AiFillThunderbolt className="text-3xl text-[#E67825]" />,
-    title: "200 Hours Yoga Teacher Training Course",
+    title: "50 Hours Yoga Workshop",
     description:
-      "Deepen your understanding of yoga philosophy, anatomy, and asana practice, empowering yourself to share the gift of yoga with others.",
+      "Enhance specific aspects of your yoga practice with focused workshops on advanced techniques.",
     highlights: [
-      "42 Days Advanced",
-      "Advanced Certification",
-      "Prior YTT Required",
+      "7 Days Intensive",
+      "Specialized Workshops",
+      "Open to All Levels",
     ],
     link: "#contact",
   },
+  
   {
     id: 2,
     icon: <AiFillThunderbolt className="text-3xl text-[#E67825]" />,
@@ -38,16 +39,17 @@ const programsData: Program[] = [
     ],
     link: "#contact",
   },
+ 
   {
-    id: 3,
+    id: 1,
     icon: <AiFillThunderbolt className="text-3xl text-[#E67825]" />,
-    title: "50 Hours Yoga Workshop",
+    title: "200 Hours Yoga Teacher Training Course",
     description:
-      "Enhance specific aspects of your yoga practice with focused workshops on advanced techniques.",
+      "Deepen your understanding of yoga philosophy, anatomy, and asana practice, empowering yourself to share the gift of yoga with others.",
     highlights: [
-      "7 Days Intensive",
-      "Specialized Workshops",
-      "Open to All Levels",
+      "42 Days Advanced",
+      "Advanced Certification",
+      "Prior YTT Required",
     ],
     link: "#contact",
   },
