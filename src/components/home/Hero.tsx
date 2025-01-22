@@ -2,11 +2,14 @@
 import React from "react";
 import { Box, Text, Button, Flex } from "@chakra-ui/react";
 import { useDisclosure } from "@chakra-ui/react";
+import Arrow from "@/assets/home/arrow.png";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   const { onOpen } = useDisclosure();
   return (
-    <Box bg="white">
+    <Box bg="white" className="relative">
+      <Box className="absolute w-[180px] rotate left-24 bottom-20 "><Image src={Arrow} alt="" className="scale-x-[-1]" /></Box>
       <Flex
         maxW={"1480px"}
         mx={"auto"}
@@ -43,6 +46,7 @@ const Hero: React.FC = () => {
           mx="auto"
           mb="8"
           lineHeight="1.6"
+          maxW={{lg:"1300px"}}
         >
           Discover the profound connection between mind, body, and spirit at
           Tatsat Yoga School. Join us to deepen your practice and unlock a life

@@ -70,9 +70,9 @@ const Navbar = () => {
   );
 
   return (
-    <Box bg="white" position="sticky" top="0" zIndex="1000" boxShadow="sm">
+    <Box bg="white" position="sticky"  top="0" zIndex="1000" boxShadow="sm">
       <Container maxW="container.xl">
-        <Flex h={20} alignItems="center" justifyContent="space-between">
+        <Flex  alignItems="center" justifyContent="space-between">
           {/* Logo or Branding */}
           <Box 
             fontWeight="bold" 
