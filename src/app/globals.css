@@ -17,3 +17,15 @@
   justify-content: center;
   align-items: center;
 }
+
+
+.swiper-slide {
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  filter: blur(0px); /* Default blur for all slides */
+  opacity: 0.5; /* Default transparency for all slides */
+}
+
+.swiper-slide-active {
+  filter: blur(0); /* Remove blur for the active slide */
+  opacity: 1; /* Make the active slide fully visible */
+}

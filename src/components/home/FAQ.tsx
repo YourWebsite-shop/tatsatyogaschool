@@ -13,6 +13,7 @@ import {
 import { FiChevronDown } from "react-icons/fi";
 import { useState } from "react"; // Import useState for state management
 import { useDisclosure } from "@chakra-ui/react";
+import Button2 from "@/components/props/Button"
 
 const FAQData = [
   {
@@ -130,7 +131,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
       borderRadius="md"
       maxW="100%"
       mr={8}
-      background="linear-gradient(96.56deg, rgba(230, 120, 37, 0.3) 27.8%, rgba(240, 237, 226, 0.3) 53.91%)"
+      background="linear-gradient(96.56deg, rgba(200, 120, 37, 0.2) 27.8%, rgba(240, 237, 226, 0.3) 100.91%)"
     >
       {({ isExpanded }: { isExpanded: boolean }) => (
         <>
@@ -203,18 +204,10 @@ const Faq: React.FC = () => {
         >
           Frequently Asked Questions
         </Heading>
-        <Button
-          px={{ base: "6", sm: "8" }}
-          py={{ base: "4", sm: "6" }}
-          bg="#E67825"
-          color="#1A202C"
-          borderRadius="full"
-          fontWeight="semibold"
-          _hover={{ bg: "#E6782590" }}
-          onClick={onOpen}
+        <Button2
         >
           Contact us
-        </Button>
+        </Button2>
       </Box>
 
       <Flex

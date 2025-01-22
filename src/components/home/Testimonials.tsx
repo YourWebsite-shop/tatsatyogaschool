@@ -140,14 +140,16 @@ const Testimonials = () => {
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 ">
           <Swiper
             spaceBetween={50}
-            slidesPerView={1}
+            slidesPerView={1.5} // Make the previous and next slides partially visible
+            centeredSlides={true} // Center the active slide
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
               1024: { slidesPerView: 2 },
             }}
+            speed={800}
             autoplay={{
-              delay: 2000,
+              delay: 3000,
               disableOnInteraction: false,
             }}
             loop="true"

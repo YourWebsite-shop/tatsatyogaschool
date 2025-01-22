@@ -1,5 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import mark1 from "@/assets/marques/mark1.jpg"
 
 const MarqCarousel = () => {
   return (
