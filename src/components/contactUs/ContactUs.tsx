@@ -31,7 +31,7 @@ const ContactUs = () => {
         id="contact"
         className="mt-[80px] sm:mt-[100px] lg:mt-[120px] bg-white"
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
           <div
             className="text-center mb-16 animate__animated animate__fadeIn"
             id="el-d9xysvqk"
@@ -146,7 +146,7 @@ const ContactUs = () => {
                   <textarea
                     id="message"
                     name="message"
-                    rows="4"
+                    rows={4}
                     className="mt-1 block w-full py-1 pr-4 border-b border-b-neutral-800 focus:outline-none"
                   ></textarea>
                 </div>
@@ -245,7 +245,7 @@ const ContactUs = () => {
           {/* map */}
           <div className="h-[60vh] pt-8  ">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.6682124569197!2d77.1394244!3d28.789154699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d014980a269cf%3A0x513027852733d2c6!2sRudra%20Enterprises%20-%20Camio%20Paint%20Protection%20Film%20%26%20Heat%20Transfer%20Vinyl%20Supplier!5e0!3m2!1sen!2sin!4v1730486554390!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d55216.37064597483!2d78.28831574497643!3d30.122150611745102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39091763c6b0b1a7%3A0xcb200ab9e90e84f!2sTrinetra%20Rd%2C%20near%20Laxman%20Jhula%2C%20Laxman%20Jhula%2C%20Rishikesh%2C%20Uttarakhand%20249302!3m2!1d30.122082799999998!2d78.32951539999999!5e0!3m2!1sen!2sin!4v1737552292055!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}

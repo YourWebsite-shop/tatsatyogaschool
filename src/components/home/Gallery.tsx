@@ -10,8 +10,10 @@ import gallery9 from "@/assets/gallery9.webp";
 const Gallery = () => {
   return (
     <Flex
+    maxWidth={"7xl"}
       width={"100%"}
-      px={{ lg: 4, "2xl": 40 }}
+      mx={"auto"}
+      px={{ base:"4", sm:"6", lg:"8" }}
       flexDir={{ base: "column", lg: "row" }}
       className="mt-[80px] sm:mt-[100px] lg:mt-[120px]"
     >
@@ -25,13 +27,13 @@ const Gallery = () => {
             id="el-d9xysvqk"
           >
             <h2
-              className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black lg:mb-4 sm:mb-2 mb-1"
+              className="lg:text-[36px] sm:text-[28px] text-[24px] space-y-4 font-bold text-Black lg:mb-4 sm:mb-2 mb-1"
               id="el-sfukqcej"
             >
               Gallery
             </h2>
             <div
-              className="lg:w-[96px] sm:w-[80px] w-[72px] h-1 bg-[#E67825] mx-auto lg:mb-6 sm:mb-5 mb-3"
+              className="lg:w-[96px] sm:w-[80px] w-[72px] h-1.5 bg-[#E67825] mx-auto lg:mb-6 sm:mb-5 mb-3"
               id="el-3zj1b12y"
             ></div>
             <p

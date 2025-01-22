@@ -13,7 +13,7 @@ const Hero: React.FC = () => {
         alignItems="center"
         justifyContent="center"
         flexDirection="column"
-        minHeight="80vh"
+        minHeight="75vh"
         textAlign="center"
       >
         <Text
