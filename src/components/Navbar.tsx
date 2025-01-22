@@ -8,7 +8,6 @@ import {
   Stack,
   Link,
   Container,
-  Text,
 } from "@chakra-ui/react";
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -28,10 +27,10 @@ const Navbar = () => {
     { name: "Contact", path: "/contactus" },
   ];
 
-  type NavLinkProps = {
-    children: React.ReactNode;
-    path: string;
-  };
+  // type NavLinkProps = {
+  //   children: React.ReactNode;
+  //   path: string;
+  // };
 
   const NavLink = ({ children, path }:{children:ReactNode, path:string}) => (
     <Link
@@ -82,7 +81,7 @@ const Navbar = () => {
             transition="transform 0.3s ease"
             _hover={{ transform: "scale(1.05)" }}
           >
-            <Image src={logo} alt="Logo" width={80} height={80} />
+            <Image src={logo} alt="Logo" width={1000} height={1000} className="w-32" />
           </Box>
 
           <IconButton

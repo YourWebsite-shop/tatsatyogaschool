@@ -203,7 +203,7 @@ const Schedule: React.FC = () => {
             </p>
             <a
               href="#contact"
-              className="inline-flex items-center px-6 py-3 rounded-md bg-[#E67825] text-neutral-900 hover:bg-[#E6782590] transition-colors"
+              className="inline-flex items-center px-6 py-3 rounded-md bg-[#E67825]  hover:bg-[#E6782590] transition-colors text-white text-lg"
               id="el-yn3po8h0"
             >
               Reserve Your Spot

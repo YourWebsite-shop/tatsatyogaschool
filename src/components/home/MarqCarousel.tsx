@@ -12,7 +12,7 @@ import mark8 from "@/assets/marques/mark8.jpg"
 import Image from "next/image";
 
 const MarqCarousel = () => {
-  let imgArr = [mark1,
+  const imgArr = [mark1,
     mark2,
     mark3,
     mark4,
@@ -22,7 +22,7 @@ const MarqCarousel = () => {
     mark8]
   return (
     <div>
-      <h2
+      {/* <h2
         className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black lg:mb-4 sm:mb-2 mb-1 text-center"
         id="el-sfukqcej"
       >
@@ -31,13 +31,13 @@ const MarqCarousel = () => {
       <div
         className="lg:w-[96px] sm:w-[80px] w-[72px] h-1 bg-[#E67825] mx-auto lg:mb-6 sm:mb-5 mb-3"
         id="el-3zj1b12y"
-      ></div>
-      
+      ></div> */}
+
 
       <Marquee>
-       {imgArr.map((img, i) => (
-        <Image src={img} alt="" width={1000} className="w-44 mx-4" />
-       ))}
+        {imgArr.map((img, i) => (
+          <Image key={i} src={img} alt="" width={1000} className="w-48 mx-4 mt-10" />
+        ))}
       </Marquee>
     </div>
   );

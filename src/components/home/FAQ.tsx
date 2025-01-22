@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import { FiChevronDown } from "react-icons/fi";
 import { useState } from "react"; // Import useState for state management
-import { useDisclosure } from "@chakra-ui/react";
 import Button2 from "@/components/props/Button"
 
 const FAQData = [
@@ -178,7 +177,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
 const Faq: React.FC = () => {
   const [visibleCount, setVisibleCount] = useState<number>(4);
 
-  const { onOpen } = useDisclosure();
+  // const { onOpen } = useDisclosure();
 
   const showMore = () => {
     setVisibleCount((prevCount) => prevCount + 4);

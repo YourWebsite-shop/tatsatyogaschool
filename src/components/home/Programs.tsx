@@ -30,8 +30,8 @@ const Programs: React.FC = () => {
 
             {/* <!-- Program Card 2 --> */}
 
-            {arr.map((item, i) => (
-              <div
+            {arr.map((_, i) => (
+              <div key={i}
                 className="bg-neutral-100 shadow-lg rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 animate__animated animate__fadeInUp animate__delay-1s"
                 id="el-9r04fp2q"
               >

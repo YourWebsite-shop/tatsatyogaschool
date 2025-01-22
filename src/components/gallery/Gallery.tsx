@@ -4,8 +4,7 @@ import {
   SimpleGrid,
   GridItem,
   Box,
-  Heading,
-  Text,
+
   Modal,
   ModalOverlay,
   ModalContent,
@@ -22,7 +21,8 @@ import gallery4 from "@/assets/gallery4.jpg";
 import gallery5 from "@/assets/gallery5.jpg";
 import gallery6 from "@/assets/gallery6.jpg";
 import gallery7 from "@/assets/gallery7.jpg";
-import gallery9 from "@/assets/gallery9.webp";
+import { StaticImageData } from "next/image";
+
 import gallery1 from "@/assets/gallery1.jpg";
 
 const Gallery = () => {
@@ -39,10 +39,10 @@ const Gallery = () => {
 
   // State and hooks for modal functionality
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [selectedImage, setSelectedImage] = useState(null);
+  const [selectedImage, setSelectedImage] = useState<StaticImageData|null>(null);
 
   // Function to handle image click
-  const handleImageClick = (src) => {
+  const handleImageClick = (src:StaticImageData) => {
     setSelectedImage(src);
     onOpen();
   };
