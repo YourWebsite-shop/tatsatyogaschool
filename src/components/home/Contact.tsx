@@ -7,7 +7,7 @@ import ContactUs from "../contactUs/ContactUs";
 const Contact = () => {
   return (
     <div>
-      <ContactUs />
+      
     </div>
   );
 };

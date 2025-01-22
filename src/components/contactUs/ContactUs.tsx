@@ -74,10 +74,11 @@ const ContactUs = () => {
           <Flex
             flexDirection={{ base: "column-reverse", lg: "row" }}
             justifyContent="space-between"
+            gap={{ base: "0", lg: "150px" }}
           >
             {/* Left Box */}
 
-            <Box w={"120%"}>
+            <Box>
               <Heading
                 fontSize={"24px"}
                 fontWeight={500}
@@ -91,7 +92,7 @@ const ContactUs = () => {
                 us then drop us a line.
               </Text>
               <Box>
-                <Flex>
+                <Flex flexDirection={"column"} gap={"30px"}>
                   <Stack spacing={{ base: "16px", lg: "30px" }}>
                     <Grid
                       templateColumns={{
@@ -99,6 +100,7 @@ const ContactUs = () => {
                         md: "repeat(2, 1fr)",
                       }}
                       gap={{ base: "16px", lg: "30px" }}
+                      width="100%"
                     >
                       <FormControl
                         isRequired
@@ -161,26 +163,26 @@ const ContactUs = () => {
                         ></Textarea>
                       </HStack>
                     </FormControl>
-                    <Checkbox mt={"-10px"}>
-                      Save my name, email, and website in this browser for the
-                      next time I comment.
-                    </Checkbox>
-                    <Button
-                      width={"fit-content"}
-                      color={"#FFFFFF"}
-                      bg={"#E67825"}
-                      fontWeight={400}
-                      px={"20px"}
-                      py={"10px"}
-                      rounded={"50px"}
-                      _hover={{
-                        bg: "#D56820",
-                      }}
-                      mb={"60px"}
-                    >
-                      Submit Now
-                    </Button>
                   </Stack>
+                  <Checkbox mt={"-10px"} display="inline-flex">
+                    <Text fontSize={"14px"}>Save my name, email, and website in this browser for the
+                    next time I comment.</Text>
+                  </Checkbox>
+                  <Button
+                    width={"fit-content"}
+                    color={"#FFFFFF"}
+                    bg={"#E67825"}
+                    fontWeight={400}
+                    px={"20px"}
+                    py={"10px"}
+                    rounded={"50px"}
+                    _hover={{
+                      bg: "#D56820",
+                    }}
+                    mb={"60px"}
+                  >
+                    Submit Now
+                  </Button>
                 </Flex>
               </Box>
             </Box>
@@ -250,13 +252,24 @@ const ContactUs = () => {
           </Flex>
 
           {/* map */}
-          <div className="h-[60vh] pt-8  ">
+          <div className="h-auto pt-8 ">
+            <h2
+              className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black lg:mb-4 sm:mb-2 mb-1 text-center"
+              id="el-sfukqcej"
+            >
+              Find Us Here
+            </h2>
+            <div
+              className="lg:w-[96px] sm:w-[80px] w-[72px] h-1 bg-[#E67825] mx-auto lg:mb-20  mb-10"
+              id="el-3zj1b12y"
+            ></div>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d55216.37064597483!2d78.28831574497643!3d30.122150611745102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x39091763c6b0b1a7%3A0xcb200ab9e90e84f!2sTrinetra%20Rd%2C%20near%20Laxman%20Jhula%2C%20Laxman%20Jhula%2C%20Rishikesh%2C%20Uttarakhand%20249302!3m2!1d30.122082799999998!2d78.32951539999999!5e0!3m2!1sen!2sin!4v1737552292055!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
               loading="lazy"
+              className="h-[60vh]"
             ></iframe>
           </div>
         </div>
