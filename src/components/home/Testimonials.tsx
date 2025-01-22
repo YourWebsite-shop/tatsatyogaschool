@@ -152,7 +152,7 @@ const Testimonials = () => {
               delay: 3000,
               disableOnInteraction: false,
             }}
-            loop="true"
+            loop={true}
             modules={[Autoplay]}
           >
             {testimonials.map((testimonial, index) => (
