@@ -186,16 +186,15 @@ const Faq: React.FC = () => {
   return (
     <Flex
       direction={{ base: "column", md: "row" }}
-      align="top"
+      align="center"
       justify="space-between"
       w="100%"
-      maxW="1480px"
-      mx={4}
-      
+      maxW="1280px"
+      mx="auto" 
       px={{ base: 6, lg: 12, "2xl": 20 }}
       className="mt-[80px] sm:mt-[100px] lg:mt-[120px]"
     >
-      <Box textAlign="start" mb={8} w={{ base: "100%", md: "35%" }}>
+      <Box textAlign="start" mb={{base:"8", md:"20"}} w={{ base: "100%", md: "35%" }}>
         <Heading
           fontSize={{ base: "24px", sm:"28px", lg: "36px" }}
           fontWeight={600}

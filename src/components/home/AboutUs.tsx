@@ -21,22 +21,22 @@ const AboutUs: React.FC = () => {
               className="animate__animated animate__fadeInLeft space-y-8"
               id="el-0o998szd"
             >
-              <div className="space-y-4" id="el-bejuwq57">
+              <div className="" id="el-bejuwq57">
                 <h2
-                  className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black leading-tight"
+                  className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black leading-tight lg:mb-4 sm:mb-2 mb-1"
                   id="el-xf6qvkzw"
                 >
                   Discover Your True Self
                 </h2>
                 <div
-                  className="lg:w-[96px] sm:w-[80px] w-[72px] h-1.5 bg-[#E67825] rounded-full"
+                  className="lg:w-[96px] sm:w-[80px] w-[72px] h-1.5 bg-[#E67825] rounded-full lg:mb-6 sm:mb-5 mb-3"
                   id="el-ibwdfxo2"
                 ></div>
               </div>
 
-              <div className="space-y-6" id="el-lg8mliz8">
+              <div className="" id="el-lg8mliz8">
                 <p
-                  className="text-lg text-neutral-600 leading-relaxed"
+                  className="text-lg text-neutral-600 leading-relaxed lg:mb-6 sm:mb-5 mb-3"
                   id="el-o5r8aana"
                 >
                   At Tatsat Yoga School, we believe yoga is not about self-improvement, but about self-acceptance. Join us to cultivate a practice that honours your true self and fosters inner harmony. Let go of striving and embrace the beauty of simply being.
