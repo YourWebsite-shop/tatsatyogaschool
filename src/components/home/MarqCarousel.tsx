@@ -1,8 +1,25 @@
+"use client"
 import React from "react";
 import Marquee from "react-fast-marquee";
 import mark1 from "@/assets/marques/mark1.jpg"
+import mark2 from "@/assets/marques/mark2.jpg"
+import mark3 from "@/assets/marques/mark3.jpg"
+import mark4 from "@/assets/marques/mark4.jpg"
+import mark5 from "@/assets/marques/mark5.jpg"
+import mark6 from "@/assets/marques/mark6.jpg"
+import mark7 from "@/assets/marques/mark7.jpg"
+import mark8 from "@/assets/marques/mark8.jpg"
+import Image from "next/image";
 
 const MarqCarousel = () => {
+  let imgArr = [mark1,
+    mark2,
+    mark3,
+    mark4,
+    mark5,
+    mark6,
+    mark7,
+    mark8]
   return (
     <div>
       <h2
@@ -18,15 +35,9 @@ const MarqCarousel = () => {
       
 
       <Marquee>
-        <div style={{ marginRight: "60px" }}>
-          <p>yoga1</p>
-        </div>
-        <div style={{ marginRight: "60px" }}>
-          <p>Yoga2</p>
-        </div>
-        <div style={{ marginRight: "60px" }}>
-          <p>yoga3</p>
-        </div>
+       {imgArr.map((img, i) => (
+        <Image src={img} alt="" width={1000} className="w-44 mx-4" />
+       ))}
       </Marquee>
     </div>
   );
