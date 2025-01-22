@@ -17,7 +17,7 @@ const Teachers = () => {
                     <div className="aspect-w-1 aspect-h-1 bg-neutral-200" id="el-qdymul9u">
                         <div className="flex items-center justify-center h-64 bg-neutral-300" id="el-0ymmi0n5">
                             <svg className="w-20 h-20 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-t15dtbqy">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-u8x8j956"></path>
+                                <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-u8x8j956"></path>
                             </svg>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ const Teachers = () => {
                     <div className="aspect-w-1 aspect-h-1 bg-neutral-200" id="el-s0lt1wb0">
                         <div className="flex items-center justify-center h-64 bg-neutral-300" id="el-et7ok441">
                             <svg className="w-20 h-20 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-0juzd6uk">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-ko2t17uw"></path>
+                                <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-ko2t17uw"></path>
                             </svg>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ const Teachers = () => {
                     <div className="aspect-w-1 aspect-h-1 bg-neutral-200" id="el-tfxcoqvm">
                         <div className="flex items-center justify-center h-64 bg-neutral-300" id="el-op3co93v">
                             <svg className="w-20 h-20 text-neutral-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" id="el-9go8mbg0">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-r0x6dreh"></path>
+                                <path stroke-linecap="round" strokeLinejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" id="el-r0x6dreh"></path>
                             </svg>
                         </div>
                     </div>

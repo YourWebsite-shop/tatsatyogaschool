@@ -1,5 +1,8 @@
 
 import React from "react";
+import { FaCheck } from "react-icons/fa6";
+import { AiFillThunderbolt } from "react-icons/ai";
+
 
 const Programs: React.FC = () => {
   const arr = Array.from({ length: 3 })
@@ -49,7 +52,7 @@ const Programs: React.FC = () => {
                     >
                       <path
                         stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinejoin="round"
                         stroke-width="2"
                         d="M13 10V3L4 14h7v7l9-11h-7z"
                         id="el-t6czx56n"
@@ -67,63 +70,21 @@ const Programs: React.FC = () => {
                   </p>
                   <ul className="text-gray-600 space-y-3 mb-8" id="el-8asuvx9i">
                     <li className="flex items-center" id="el-c11scc5p">
-                      <svg
-                        className="w-5 h-5 text-[#E67825] mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        id="el-2qs5w28t"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                          id="el-yhtxk67p"
-                        ></path>
-                      </svg>
+                    <FaCheck className="text-[#E67825] mr-2" />
                       42 Days Advanced
                     </li>
                     <li className="flex items-center" id="el-oto9z5of">
-                      <svg
-                        className="w-5 h-5 text-[#E67825] mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        id="el-qa1kuwkw"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                          id="el-bpiwmhwt"
-                        ></path>
-                      </svg>
+                    <FaCheck className="text-[#E67825] mr-2" />
                       Advanced Certification
                     </li>
                     <li className="flex items-center" id="el-pl5nychk">
-                      <svg
-                        className="w-5 h-5 text-[#E67825] mr-2"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        id="el-tx7t8kmg"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M5 13l4 4L19 7"
-                          id="el-06mmyqih"
-                        ></path>
-                      </svg>
+                    <FaCheck className="text-[#E67825] mr-2" />
                       Prior YTT Required
                     </li>
                   </ul>
                   <a
                     href="#contact"
-                    className="block text-center py-3 bg-[#E67825] text-black rounded-full hover:bg-orange-600 transition-colors duration-300"
+                    className="block text-center py-3 bg-[#E67825] text-white rounded-full hover:bg-orange-600 transition-colors duration-300"
                     id="el-j8fltm1v"
                   >
                     Learn More
