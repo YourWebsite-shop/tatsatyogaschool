@@ -12,7 +12,7 @@ import {
 import { IoCloseSharp } from "react-icons/io5";
 import { GiHamburgerMenu } from "react-icons/gi";
 import NextLink from "next/link";
-import logo from "@/assets/Logo.png";
+import logo from "@/assets/Logo-transparent.png";
 import Image from "next/image";
 import { ReactNode } from "react";
 
