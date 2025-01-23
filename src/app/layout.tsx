@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google"
+import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "./providers";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 const poppins = Poppins({ subsets: ['latin'], weight: ["100", "200", "300", "400", "500", "600", "700", "900", "800"] })
 
+
+const kaftan = localFont({
+  src:"./fonts/kaftan.otf",
+  variable:"--kaftan",
+  weight:"100 200 300 400 500 600 700 800 900"
+})
 
 
 export const metadata: Metadata = {
@@ -21,10 +28,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} antialiased`}
+        className={`${poppins.className} ${kaftan.variable} antialiased`}
       >
         <Providers>
-          <Navbar />
+          {/* <Navbar /> */}
           {children}
           <Footer />
         </Providers>
