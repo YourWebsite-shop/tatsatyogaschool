@@ -134,7 +134,8 @@ const OurClasses = () => {
             <Image src={Arrow} alt="Previous" width={90} height={90} className="transform scale-x-[-1]" />
           </button>
         
-          <div className="px-2 md:px-8 w-full max-w-5xl">
+          <div className="px-2 md:px-8 w-full max-w-5xl relative ">
+            <Image src={Top} alt='' className='absolute z-10 w-28 left-1/2 -translate-x-1/2' />
             <Swiper
               ref={swiperRef}
               className="mySwiper max-w-4xl rounded-b-[48px] overflow-hidden"

@@ -149,3 +149,28 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
   }
 }
+
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 500%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.swiper-button-prev {
+  left: 10px; /* Adjust the positioning */
+}
+
+.swiper-button-next {
+  right: 10px; /* Adjust the positioning */
+}
+
+.swiper-button-prev img,
+.swiper-button-next img {
+  width: 30px; /* Adjust size of the arrow */
+  height: 30px;
+}
