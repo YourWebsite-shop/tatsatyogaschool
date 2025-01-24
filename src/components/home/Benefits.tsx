@@ -1,6 +1,5 @@
 import React from "react";
 
-
 import { IoFlowerOutline } from "react-icons/io5";
 import { WiMoonWaningCrescent5 } from "react-icons/wi";
 
@@ -62,9 +61,9 @@ const Benefits = () => {
             asleep.
           </p>
         </div>
-        
+
         <div className="flex flex-col items-center">
-        <div className="pt-4 hidden lg:block absolute">
+          <div className="pt-4 hidden lg:block absolute">
             <WiMoonWaningCrescent5 className="relative text-[#F57D49] text-[18px] translate-x-40 translate-y-2 " />
           </div>
           <div className="bg-[#F57D49] rounded-full p-2 mb-5">
@@ -79,10 +78,9 @@ const Benefits = () => {
             you better understand yourself and your emotions.
           </p>
         </div>
-        
-        <div className="flex flex-col items-center">
-          <div className="bg-[#F57D49] rounded-full p-2 mb-5">
-            <IoFlowerOutline className="text-white text-[60px] " />
+        <div className="flex flex-col items-center lg:block hidden">
+          <div className="bg-[#F57D49] rounded-full p-2 mb-5 flex justify-center items-center w-[75px] h-[75px] ">
+            <IoFlowerOutline className="text-white text-[60px]" />
           </div>
           <h2 className="text-[22px] text-[#1A1A1A] font-[500] text-center pb-2">
             REDUCE STRESS
@@ -93,6 +91,19 @@ const Benefits = () => {
             the mind, improve mood, and reduce symptoms of depression.
           </p>
         </div>
+      </div>
+      <div className="flex flex-col items-center lg:hidden block pt-[38px] sm:px-[170px] ">
+        <div className="bg-[#F57D49] rounded-full p-2 mb-5 flex justify-center items-center w-[75px] h-[75px] ">
+          <IoFlowerOutline className="text-white text-[60px] " />
+        </div>
+        <h2 className="text-[22px] text-[#1A1A1A] font-[500] text-center pb-2">
+          REDUCE STRESS
+        </h2>
+        <p className="text-[14px] font-[400] text-[#1A1A1A]  text-center">
+          Meditation and breathing practices, which are an integral part of
+          yoga, are effective in reducing stress and anxiety. They help calm the
+          mind, improve mood, and reduce symptoms of depression.
+        </p>
       </div>
     </div>
   );

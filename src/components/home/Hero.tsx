@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import heroImg from "@/assets/home/yoga.jpg"
-import logo from "@/assets/Logo.png"
+import logo from "@/assets/Logo-transparent.png"
 const Hero: React.FC = () => {
   return (
     <div className='bg-[#F67D49] px-[2px]'>
