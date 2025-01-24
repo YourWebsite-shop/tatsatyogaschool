@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 
 import heroImg from "@/assets/home/yoga.jpg";
-import logo from "@/assets/Logo.png";
+import logo from "@/assets/Logo-transparent.png";
 import Image from "next/image";
 
 const Hero: React.FC = () => {

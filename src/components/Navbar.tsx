@@ -12,7 +12,7 @@ import {
   IconButton,
   DrawerFooter,
 } from "@chakra-ui/react";
-import logo from "@/assets/Logo.png";
+import logo from "@/assets/Logo-transparent.png";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";

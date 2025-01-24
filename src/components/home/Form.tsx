@@ -30,11 +30,12 @@ const Form = () => {
         </h1>
 
         <Box
-        p={{base:"5", sm:"8", lg:"10"}}
+          p={{ base: "5", sm: "8", lg: "10" }}
           width="50%"
           maxW="400px"
           mt="8"
           bg="rgba(255, 255, 255, 0.5) "
+          style={{ backdropFilter: "blur(2px)" }}
         >
           <p className="text-center text-white lg:text-[16px] sm:text-[12px] text-[10px] pb-2">
             BOOK NOW AND GET{" "}
@@ -54,7 +55,7 @@ const Form = () => {
               >
                 <HStack>
                   <Input
-                    fontSize={{base:"10px", sm:"12px", lg:"14px"}}
+                    fontSize={{ base: "10px", sm: "12px", lg: "14px" }}
                     type="text"
                     name="name"
                     placeholder="Full Name"
@@ -65,7 +66,7 @@ const Form = () => {
                     width="100%"
                     p={0}
                     mb={-3}
-                    pb={{base:"0", lg:"2"}}
+                    pb={{ base: "0", lg: "2" }}
                   />
                 </HStack>
               </FormControl>
@@ -77,7 +78,7 @@ const Form = () => {
               >
                 <HStack>
                   <Input
-                    fontSize={{base:"10px", sm:"12px", lg:"14px"}}
+                    fontSize={{ base: "10px", sm: "12px", lg: "14px" }}
                     type="tel"
                     name="phone"
                     placeholder="Phone Number"
@@ -88,7 +89,7 @@ const Form = () => {
                     width="100%"
                     p={0}
                     mb={-3}
-                    pb={{base:"0", lg:"2"}}
+                    pb={{ base: "0", lg: "2" }}
                   />
                 </HStack>
               </FormControl>
@@ -100,7 +101,7 @@ const Form = () => {
               >
                 <HStack>
                   <Input
-                    fontSize={{base:"10px", sm:"12px", lg:"14px"}}
+                    fontSize={{ base: "10px", sm: "12px", lg: "14px" }}
                     type="email"
                     name="email"
                     placeholder="Email"
@@ -111,7 +112,7 @@ const Form = () => {
                     width="100%"
                     p={0}
                     mb={-3}
-                    pb={{base:"0", lg:"2"}}
+                    pb={{ base: "0", lg: "2" }}
                   />
                 </HStack>
               </FormControl>
@@ -120,11 +121,11 @@ const Form = () => {
                 <HStack spacing={2} width="100%">
                   <Menu>
                     <MenuButton
-                      fontSize={{base:"10px", sm:"12px", lg:"14px"}}
+                      fontSize={{ base: "10px", sm: "12px", lg: "14px" }}
                       as={Button}
                       bg=""
                       w={"full"}
-                      color="white"
+                      color="#6C615D"
                       textAlign={"left"}
                       rightIcon={<GoTriangleDown />}
                       _focus={{
@@ -133,14 +134,13 @@ const Form = () => {
                       }}
                       _hover={{
                         bg: "none",
-                        color: "white",
                       }}
                       _active={{
                         bg: "none",
                       }}
                       p={0}
                       mb={-3}
-                      pb={{base:"0", lg:"2"}}
+                      pb={{ base: "0", lg: "2" }}
                     >
                       Choose a Practice
                     </MenuButton>
@@ -169,13 +169,13 @@ const Form = () => {
               }}
             >
               <p className="lg:text-[10px] sm:text-[8px] text-[6px] lg:pl-2 sm:pl-1 pl-0  ">
-              I agree to the{" "}
-              <span className="text-[#F57D49]">Terms & Privacy</span>
+                I agree to the{" "}
+                <span className="text-[#F57D49]">Terms & Privacy</span>
               </p>
             </Checkbox>
             <Button
               width="full"
-              fontSize={{base:"14px", sm:"16px", lg:"20px"}}
+              fontSize={{ base: "14px", sm: "16px", lg: "20px" }}
               bg="#F57D49"
               color="#FFFFFF"
               fontWeight={400}
