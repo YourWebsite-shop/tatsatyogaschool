@@ -2,6 +2,7 @@
 import React, { useState, useRef } from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from 'swiper/modules'
+import type { Swiper as SwiperType } from "swiper" 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { FaCalendarAlt } from "react-icons/fa";
@@ -16,7 +17,7 @@ import Top from '@/assets/Top.png'
 
 const OurClasses = () => {
   const [activeClass, setActiveClass] = useState("100 Hours");
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef<SwiperType>();
 
   const classes = [
     {
@@ -55,13 +56,13 @@ const OurClasses = () => {
       image: Carousel4,
       teacher: "David Rodriguez"
     }
-  ]
+  ] as const;
 
   const changeClass = (className: string) => {
     setActiveClass(className);
     const newIndex = classes.findIndex(c => c.name === className);
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(newIndex);
+    if (swiperRef.current) {
+      swiperRef.current.slideTo(newIndex);
     }
   }
 
@@ -70,7 +71,7 @@ const OurClasses = () => {
   const prevButtonRef = useRef<HTMLButtonElement>(null);
   const nextButtonRef = useRef<HTMLButtonElement>(null);
 
-  const handleSlideChange = (swiper: any) => {
+  const handleSlideChange = (swiper: SwiperType) => {
     const activeIndex = swiper.realIndex;
     setActiveClass(classes[activeIndex].name);
   };
@@ -137,7 +138,9 @@ const OurClasses = () => {
           <div className="px-2 md:px-8 w-full max-w-5xl relative ">
             <Image src={Top} alt='' className='absolute z-10 w-28 left-1/2 -translate-x-1/2' />
             <Swiper
-              ref={swiperRef}
+              onSwiper={(swiper) => {
+                swiperRef.current = swiper;
+              }}
               className="mySwiper max-w-4xl rounded-b-[48px] overflow-hidden"
               modules={[Navigation]}
               navigation={{
