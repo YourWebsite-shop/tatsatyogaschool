@@ -1,10 +1,9 @@
-"use client"
-import React from 'react'
+"use client";
+import React from "react";
 import {
-  
   Flex,
   Text,
-    Drawer,
+  Drawer,
   DrawerOverlay,
   DrawerContent,
   DrawerBody,
@@ -18,14 +17,14 @@ import { FaLocationDot } from "react-icons/fa6";
 import { IoMdCall } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
-import Image from 'next/image';
+import Image from "next/image";
 
 const Navbar = () => {
-   const { isOpen, onOpen, onClose } = useDisclosure();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-          {/* Navbar */}
-          <Flex
+      {/* Navbar */}
+      <Flex
         as="nav"
         align="center"
         justify="space-between"
@@ -35,7 +34,7 @@ const Navbar = () => {
         color="white"
         position="relative"
         flexDir="row-reverse"
-      // Add animation class
+        // Add animation class
       >
         {/* Hamburger for Mobile */}
         <IconButton
@@ -47,7 +46,12 @@ const Navbar = () => {
         />
 
         {/* Logo */}
-        <Image src={logo} alt="logo" width={1000} className="   w-10  lg:max-w-none fade-animation-hero-logo sm:hidden" />
+        <Image
+          src={logo}
+          alt="logo"
+          width={1000}
+          className=" w-10 lg:max-w-none fade-animation-hero-logo sm:hidden"
+        />
 
         {/* Links for Desktop */}
         <Flex
@@ -55,25 +59,45 @@ const Navbar = () => {
           align="center"
           gap={8}
           fontSize="lg"
-          w={'full'}
-          justifyContent={'space-around'}
-
+          w={"full"}
+          justifyContent={"space-around"}
         >
-          <Text cursor="pointer" className="fade-animation">Home</Text>
-          <Text cursor="pointer" className="fade-animation">About Us</Text>
-          <Text cursor="pointer" className="fade-animation">Yoga Retreat</Text>
-          <Image src={logo} alt="logo" width={1000} className="w-8 lg:w-20  fade-animation" />
-          <Text cursor="pointer" className="fade-animation">Courses</Text>
-          <Text cursor="pointer" className="fade-animation">Contact US</Text>
-          <Text cursor="pointer" className="fade-animation">Book Now</Text>
+          <Text cursor="pointer" className="fade-animation">
+            Home
+          </Text>
+          <Text cursor="pointer" className="fade-animation">
+            About Us
+          </Text>
+          <Text cursor="pointer" className="fade-animation">
+            Yoga Retreat
+          </Text>
+          <Image
+            src={logo}
+            alt="logo"
+            width={1000}
+            className="w-8 lg:w-20 mx-[150px]  fade-animation"
+          />
+          <Text cursor="pointer" className="fade-animation">
+            Courses
+          </Text>
+          <Text cursor="pointer" className="fade-animation">
+            Contact US
+          </Text>
+          <Text cursor="pointer" className="fade-animation">
+            Book Now
+          </Text>
         </Flex>
       </Flex>
 
       {/* Drawer for Mobile Navbar */}
       <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
-        <DrawerContent bg="#F67D49" color="white" className="rounded-tr-[50px] rounded-tl-[50px]" >
-          <DrawerBody py={10} >
+        <DrawerContent
+          bg="#F67D49"
+          color="white"
+          className="rounded-tr-[50px] rounded-tl-[50px]"
+        >
+          <DrawerBody py={10}>
             <Flex direction="column" align="center" gap={6} fontSize="lg">
               <Text cursor="pointer" onClick={onClose}>
                 Home
@@ -96,18 +120,26 @@ const Navbar = () => {
             </Flex>
           </DrawerBody>
           <DrawerFooter>
-            <Flex alignItems={'self-start'} flexDir={'column'} justifyContent={'start'} className="w-full block" gap={2} >
-              <Flex alignItems={'center'} gap={4} fontSize={'sm'}><FaLocationDot />
+            <Flex
+              alignItems={"self-start"}
+              flexDir={"column"}
+              justifyContent={"start"}
+              className="w-full block"
+              gap={2}
+            >
+              <Flex alignItems={"center"} gap={4} fontSize={"sm"}>
+                <FaLocationDot />
                 <Text>Rishikesh, India</Text>
               </Flex>
-              <Flex alignItems={'center'} gap={4} fontSize={'sm'}><IoMdCall />
+              <Flex alignItems={"center"} gap={4} fontSize={"sm"}>
+                <IoMdCall />
                 <Text>Rishikesh, India</Text>
               </Flex>
-              <Flex alignItems={'center'} gap={4} fontSize={'sm'}><IoMail />
+              <Flex alignItems={"center"} gap={4} fontSize={"sm"}>
+                <IoMail />
                 <Text>Rishikesh, India</Text>
               </Flex>
             </Flex>
-
           </DrawerFooter>
           <Flex className="bloxk w-full flex justify-center gap-4 py-4">
             <FaInstagram className="text-4xl  rounded-full p-1" />
@@ -116,9 +148,8 @@ const Navbar = () => {
           </Flex>
         </DrawerContent>
       </Drawer>
-
     </>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
