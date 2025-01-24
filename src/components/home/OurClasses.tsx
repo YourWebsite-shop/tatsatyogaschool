@@ -12,6 +12,7 @@ import Carousel1 from '@/assets/home/carousel1.jpg'
 import Carousel2 from '@/assets/home/carousel2.jpg'
 import Carousel3 from '@/assets/home/carousel3.jpg'
 import Carousel4 from '@/assets/home/carousel4.jpg'
+import Top from '@/assets/Top.png'
 
 const OurClasses = () => {
   const [activeClass, setActiveClass] = useState("100 Hours");
