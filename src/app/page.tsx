@@ -1,6 +1,5 @@
 import AboutUs from '@/components/home/AboutUs'
 import Contact from '@/components/home/Contact'
-import Gallery from '@/components/home/Gallery'
 import Hero from '@/components/home/Hero'
 import Programs from '@/components/home/Programs'
 import Schedule from '@/components/home/Schedule'
@@ -9,6 +8,9 @@ import MarqCarousel from '@/components/home/MarqCarousel'
 import Faq from '@/components/home/FAQ'
 import OurClasses from '@/components/home/OurClasses'
 
+import Benefits from '@/components/home/Benefits'
+import YogaRetreat from '@/components/home/YogaRetreat'
+import Form from "@/components/home/Form"
 
 import React from 'react'
 
@@ -18,10 +20,15 @@ const Home: React.FC = () => {
       <Hero />
       <MarqCarousel />
       <AboutUs />
-      <Gallery />
+      <YogaRetreat />
+      {/* <Courses /> */}
+      {/* <Gallery /> */}
       <Programs />
+      <Benefits />
+      
       <Schedule />
       <Testimonials />
+      <Form />
       <Faq />
       <Contact />
       <OurClasses />

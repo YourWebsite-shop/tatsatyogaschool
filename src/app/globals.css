@@ -3,16 +3,20 @@
 @tailwind utilities;
 
 
-
-body::-webkit-scrollbar{
-  width: 6px;
+body,
+html {
+  overflow-x: hidden;
 }
 
-body::-webkit-scrollbar-track{
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-track {
   background-color: white;
 }
 
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   background-color: gray;
   border-radius: 10px;
 }
@@ -36,14 +40,52 @@ body::-webkit-scrollbar-thumb{
 
 .swiper-slide {
   transition: filter 0.3s ease, opacity 0.3s ease;
-  opacity: 0.7; 
+  opacity: 0.7;
 }
 
 .swiper-slide-active {
-  
-  opacity: 1; /* Make the active slide fully visible */
+
+  opacity: 1;
+  /* Make the active slide fully visible */
 }
 
 .kaftan-text {
   font-family: var(--kaftan), sans-serif;
+}
+
+
+
+.fade-animation {
+  animation: test 1s 0s forwards !important;
+  /* Single shorthand */
+}
+
+.fade-animation-hero-logo {
+  animation: logo 1s 0s forwards !important;
+  /* Single shorthand */
+}
+
+@keyframes test {
+  from {
+    transform: translateY(20px);
+    background: transparent;
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes logo {
+  from {
+    scale: 1.25;
+    opacity: 0;
+  }
+
+  to {
+    scale: 1;
+    opacity: 1;
+  }
 }
