@@ -5,6 +5,7 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { FaCalendarAlt } from "react-icons/fa";
+import { GiMeditation } from "react-icons/gi";
 import Image from 'next/image';
 import Arrow from '@/assets/arrow.png'
 import Carousel1 from '@/assets/home/carousel1.jpg'
@@ -21,33 +22,37 @@ const OurClasses = () => {
       name: "100 Hours",
       description: "Our foundational yoga teacher training program designed for aspiring instructors and dedicated practitioners. This comprehensive course covers essential asanas, pranayama techniques, teaching methodology, anatomy basics, and yoga philosophy. Perfect for those beginning their teaching journey or deepening their practice.",
       specifics: "Basic asanas, breathing techniques, meditation, anatomy basics, yoga philosophy",
-      schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
+      schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
       bookingLink: "https://example.com/book/100-hours",
-      image: Carousel1
+      image: Carousel1,
+      teacher: "Sarah Johnson - RYT 500, 10 years teaching experience"
     },
     {
       name: "200 Hours", 
       description: "An immersive yoga teacher training program certified by Yoga Alliance. This transformative course provides in-depth study of asana practice, teaching methodology, anatomy, philosophy and practicum. Students will develop strong teaching skills while deepening their understanding of yoga's traditional roots.",
       specifics: "Teaching methodology, advanced asanas, anatomy, philosophy, pranayama, class planning",
-      schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
+      schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
       bookingLink: "https://example.com/book/200-hours",
-      image: Carousel2
+      image: Carousel2,
+      teacher: "Michael Chen - E-RYT 500, 15 years teaching experience"
     },
     {
       name: "300 Hours",
       description: "An advanced training program designed for certified 200-hour teachers looking to expand their expertise. This intensive course covers complex asanas, therapeutic applications, energy work and specialized teaching skills. Students will refine their teaching while exploring advanced philosophy and pranayama.",
       specifics: "Therapeutic yoga, advanced teaching, energy work, specialized populations, business skills",
-      schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
+      schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
       bookingLink: "https://example.com/book/300-hours",
-      image: Carousel3
+      image: Carousel3,
+      teacher: "Priya Patel - E-RYT 500, 12 years teaching experience"
     },
     {
       name: "500 Hours",
       description: "Our most comprehensive teacher training program combining foundational and advanced studies. This transformative journey covers advanced teaching methodologies, therapeutic applications, energy work and specialized populations. Perfect for those seeking complete mastery of yoga instruction.",
       specifics: "Complete mastery program, advanced therapy, specialized teaching, professional development",
-      schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
+      schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
       bookingLink: "https://example.com/book/500-hours",
-      image: Carousel4
+      image: Carousel4,
+      teacher: "David Miller - E-RYT 500, YACEP, 20 years teaching experience"
     }
   ]
 
@@ -106,9 +111,13 @@ const OurClasses = () => {
             <div className='text-lg font-semibold mb-4'>
               SCHEDULE
             </div>
-            <div className='text-sm flex'><div className="inline-flex items-center justify-center bg-gray-700 rounded-full w-8 h-8 mr-2">
-                <FaCalendarAlt />
-              </div><div>{activeClassData?.schedule}</div></div>
+            <div className='text-sm flex'><div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
+                <FaCalendarAlt className="mx-[9px]" />
+              </div><div className="flex-1">{activeClassData?.schedule}</div></div>
+            <div className='text-lg font-semibold mb-4 mt-8'>
+              TEACHER
+            </div>
+            <div className='text-sm'>{activeClassData?.teacher}</div>
           </div>
         </div>
       </div>

@@ -29,22 +29,22 @@ const AboutUs: React.FC = () => {
               <div className='w-[25vw] p-10'><Image src={gal9} alt='' className='w-full rounded-br-[50px] rounded-tl-[50px]' data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" /></div>
 
             </div>
-            <div className='px-10 flex justify-between ' data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            <div className='pl-10 flex justify-between pr-24' data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
               <div>
-                <span className='block text-3xl text-orange-400'>8</span>
+                <span className='block text-3xl text-orange-400 font-bold'>8</span>
                 Years Of Experience
               </div>
               <div>
-                <span className='block text-3xl text-orange-400'>6</span>
+                <span className='block text-3xl text-orange-400 font-bold'>6</span>
                 Types of Classes
               </div>
               <div>
-                <span className='block text-3xl text-orange-400'>1000+</span>
+                <span className='block text-3xl text-orange-400 font-bold'>1000+</span>
                 Satisfied Clients
               </div>
               <div>
-                <span className='block text-3xl text-orange-400'>8</span>
-                Years Of Experience
+                <span className='block text-3xl text-orange-400 font-bold'>95%</span>
+                Positive Reviews
               </div>
             </div>
 
