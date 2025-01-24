@@ -77,13 +77,13 @@ const OurClasses = () => {
   return (
     <div className='pb-12'>
       <div className='bg-[#1A1A1A] pt-5 pb-96 rounded-t-[60px]'>
-        <div className='kaftan-text my-8 text-white text-center text-5xl font-bold tracking-widest'>OUR CLASSES</div>
-        <div className='flex flex-wrap justify-center gap-4 px-4'>
+        <div className='kaftan-text my-8 text-white text-center lg:text-5xl md:text-4xl text-3xl font-bold tracking-widest'>OUR CLASSES</div>
+        <div className='flex md:flex-wrap md:justify-center gap-4 px-4 overflow-x-auto md:overflow-visible whitespace-nowrap scrollbar-hide'>
           {classes.map((yogaClass, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative inline-block md:block">
               <div
                 onClick={() => changeClass(yogaClass.name)}
-                className={`px-8 py-3 rounded-full text-sm font-medium cursor-pointer transition-colors
+                className={`lg:px-8 md:px-6 px-4 py-3 rounded-full lg:text-sm text-xs font-medium cursor-pointer transition-colors
                   ${yogaClass.name === activeClass ?
                     'text-[#F67D49]' :
                     'text-white'}`}
@@ -91,23 +91,23 @@ const OurClasses = () => {
                 {yogaClass.name}
               </div>
               {yogaClass.name === activeClass && (
-                <div className="absolute top-14 left-1/2 -translate-x-1/2 w-[300px] text-white text-center">
+                <div className="absolute top-14 left-1/2 -translate-x-1/2 w-full md:w-[300px] text-white text-center">
                   <div className="absolute left-1/2 -translate-x-1/2 -top-2 w-2 h-2 bg-[#F67D49] rounded-full"></div>
                 </div>
               )}
             </div>
           ))}
         </div>
-        <div className='max-w-5xl mx-auto flex gap-8 px-10 mt-16 text-white'>
-          <div className='w-[50%]'>
+        <div className='max-w-5xl mx-auto flex flex-col lg:flex-row gap-8 px-4 lg:px-10 mt-16 text-white'>
+          <div className='lg:w-[50%] w-full'>
               <div className='text-lg font-semibold mb-4'>ABOUT</div>
               <div className='text-sm'>{activeClassData?.description}</div>
           </div>
-          <div className='w-[25%]'>
+          <div className='lg:w-[25%] md:w-[50%] w-full'>
             <div className='text-lg font-semibold mb-4'>SPECIFICS</div>
             <div className='text-sm'>{activeClassData?.specifics}</div>
           </div>
-          <div className='w-[25%]'>
+          <div className='lg:w-[25%] md:w-[50%] w-full'>
             <div className='text-lg font-semibold mb-4'>
               SCHEDULE
             </div>
@@ -123,21 +123,17 @@ const OurClasses = () => {
               </div>
               <div className="flex-1"><span className='font-semibold text-xs'>INSTRUCTOR</span> <br />{activeClassData?.teacher}</div>
             </div>
-            {/* <div className='text-lg font-semibold mb-4 mt-8'>
-              TEACHER
-            </div>
-            <div className='text-sm'>{activeClassData?.teacher}</div> */}
           </div>
         </div>
       </div>
  
       <div className='relative -mt-80'>
         <div className="flex max-w-6xl mx-auto mt-8">
-          <button ref={prevButtonRef}>
+          <button ref={prevButtonRef} className="hidden md:block">
             <Image src={Arrow} alt="Previous" width={90} height={90} className="transform scale-x-[-1]" />
           </button>
         
-          <div className="px-8 max-w-5xl">
+          <div className="px-2 md:px-8 w-full max-w-5xl">
             <Swiper
               ref={swiperRef}
               className="mySwiper max-w-4xl rounded-b-[48px] overflow-hidden"
@@ -162,12 +158,12 @@ const OurClasses = () => {
             >
               {classes.map((yogaClass, index) => (
                 <SwiperSlide key={index}>
-                  <Image src={yogaClass.image} alt={yogaClass.name} className="rounded-b-lg" />
+                  <Image src={yogaClass.image} alt={yogaClass.name} className="rounded-b-lg w-full h-auto" />
                 </SwiperSlide>
               ))}
             </Swiper>
           </div>
-          <button ref={nextButtonRef}>
+          <button ref={nextButtonRef} className="hidden md:block">
             <Image src={Arrow} alt="Next" width={90} height={90} />
           </button>
         </div>
