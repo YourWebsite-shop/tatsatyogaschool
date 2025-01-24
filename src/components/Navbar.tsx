@@ -30,7 +30,7 @@ const Navbar = () => {
         align="center"
         justify="space-between"
         px={6}
-        py={{ base: 2, lg: 4 }}
+        py={{ base: 2, lg: 3 }}
         bg="#F67D49"
         color="white"
         position="relative"
