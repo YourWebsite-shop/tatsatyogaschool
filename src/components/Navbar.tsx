@@ -1,146 +1,124 @@
-"use client";
+"use client"
+import React from 'react'
 import {
-  Box,
+  
   Flex,
-  HStack,
-  IconButton,
+  Text,
+    Drawer,
+  DrawerOverlay,
+  DrawerContent,
+  DrawerBody,
   useDisclosure,
-  Stack,
-  Link,
-  Container,
+  IconButton,
+  DrawerFooter,
 } from "@chakra-ui/react";
-import { IoCloseSharp } from "react-icons/io5";
-import { GiHamburgerMenu } from "react-icons/gi";
-import NextLink from "next/link";
-import logo from "@/assets/Logo-transparent.png";
-import Image from "next/image";
-import { ReactNode } from "react";
+import logo from "@/assets/Logo.png";
+import { HamburgerIcon } from "@chakra-ui/icons";
+import { FaLocationDot } from "react-icons/fa6";
+import { IoMdCall } from "react-icons/io";
+import { IoMail } from "react-icons/io5";
+import { FaInstagram } from "react-icons/fa";
+import Image from 'next/image';
 
 const Navbar = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
-  const Links = [
-    { name: "Home", path: "/" },
-    { name: "About Us", path: "/aboutus" },
-    { name: "Yoga Retreat", path: "" },
-    { name: "Yoga TTC Course", path: "" },
-    { name: "Contact", path: "/contactus" },
-  ];
-
-  // type NavLinkProps = {
-  //   children: React.ReactNode;
-  //   path: string;
-  // };
-
-  const NavLink = ({ children, path }:{children:ReactNode, path:string}) => (
-    <Link
-      as={NextLink}
-      px={4}
-      py={2}
-      rounded="md"
-      href={path}
-      fontSize="md"
-      fontWeight="medium"
-      transition="all 0.3s ease"
-      position="relative"
-      _hover={{
-        textDecoration: "none",
-        color: "#E67825",
-        _after: {
-          width: "100%"
-        }
-      }}
-      _after={{
-        content: '""',
-        position: "absolute",
-        width: "0%",
-        height: "2px",
-        bottom: "0",
-        left: "0",
-        backgroundColor: "#E67825",
-        transition: "width 0.3s ease"
-      }}
-      _activeLink={{
-        fontWeight: "bold",
-        color: "#E67825",
-      }}
-    >
-      {children}
-    </Link>
-  );
-
+   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
-    <Box bg="white" position="sticky"  top="0" zIndex="1000" boxShadow="sm">
-      <Container maxW="container.xl">
-        <Flex  alignItems="center" justifyContent="space-between">
-          {/* Logo or Branding */}
-          <Box 
-            fontWeight="bold" 
-            fontSize="xl" 
-            color="#E67825"
-            transition="transform 0.3s ease"
-            _hover={{ transform: "scale(1.05)" }}
-          >
-            <Image src={logo} alt="Logo" width={1000} height={1000} className="w-32" />
-          </Box>
+    <>
+          {/* Navbar */}
+          <Flex
+        as="nav"
+        align="center"
+        justify="space-between"
+        px={6}
+        py={{ base: 0, lg: 4 }}
+        bg="#F67D49"
+        color="white"
+        position="relative"
+        flexDir="row-reverse"
+      // Add animation class
+      >
+        {/* Hamburger for Mobile */}
+        <IconButton
+          display={{ base: "block", lg: "none" }}
+          aria-label="Open menu"
+          icon={<HamburgerIcon />}
+          onClick={onOpen}
+          variant="unstyled"
+        />
 
-          <IconButton
-            size="lg"
-            icon={isOpen ? <IoCloseSharp size={24} /> : <GiHamburgerMenu size={24} />}
-            aria-label="Toggle Navigation"
-            display={{ md: "none" }}
-            onClick={isOpen ? onClose : onOpen}
-            background="transparent"
-            color="#E67825"
-            _hover={{ 
-              background: "rgba(230, 120, 37, 0.1)",
-              transform: "scale(1.1)"
-            }}
-            _active={{ 
-              background: "rgba(230, 120, 37, 0.2)" 
-            }}
-            transition="all 0.3s ease"
-          />
+        {/* Logo */}
+        <Image src={logo} alt="logo" width={1000} className="   w-10  lg:max-w-none fade-animation-hero-logo sm:hidden" />
 
-          <HStack 
-            as="nav" 
-            spacing={6} 
-            display={{ base: "none", md: "flex" }}
-            alignItems="center"
-          >
-            {Links.map((link) => (
-              <NavLink key={link.name} path={link.path}>
-                {link.name}
-              </NavLink>
-            ))}
-          </HStack>
+        {/* Links for Desktop */}
+        <Flex
+          display={{ base: "none", lg: "flex" }}
+          align="center"
+          gap={8}
+          fontSize="lg"
+          w={'full'}
+          justifyContent={'space-around'}
+
+        >
+          <Text cursor="pointer" className="fade-animation">Home</Text>
+          <Text cursor="pointer" className="fade-animation">About</Text>
+          <Text cursor="pointer" className="fade-animation">Some2</Text>
+          <Image src={logo} alt="logo" width={1000} className="w-8 lg:w-20  fade-animation" />
+          <Text cursor="pointer" className="fade-animation">Some3</Text>
+          <Text cursor="pointer" className="fade-animation">Some3</Text>
+          <Text cursor="pointer" className="fade-animation">Some3</Text>
         </Flex>
+      </Flex>
 
-        {/* Dropdown Menu for Mobile */}
-        {isOpen && (
-          <Box 
-            pb={4} 
-            display={{ md: "none" }}
-            animation="slideDown 0.3s ease-in-out"
-            sx={{
-              "@keyframes slideDown": {
-                "0%": { opacity: 0, transform: "translateY(-10px)" },
-                "100%": { opacity: 1, transform: "translateY(0)" }
-              }
-            }}
-          >
-            <Stack as="nav" spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link.name} path={link.path}>
-                  {link.name}
-                </NavLink>
-              ))}
-            </Stack>
-          </Box>
-        )}
-      </Container>
-    </Box>
-  );
-};
+      {/* Drawer for Mobile Navbar */}
+      <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
+        <DrawerOverlay />
+        <DrawerContent bg="#F67D49" color="white" className="rounded-tr-[50px] rounded-tl-[50px]" >
+          <DrawerBody py={20} >
+            <Flex direction="column" align="center" gap={6} fontSize="lg">
+              <Text cursor="pointer" onClick={onClose}>
+                Home
+              </Text>
+              <Text cursor="pointer" onClick={onClose}>
+                About
+              </Text>
+              <Text cursor="pointer" onClick={onClose}>
+                Some2
+              </Text>
+              <Text cursor="pointer" onClick={onClose}>
+                Some3
+              </Text>
+              <Text cursor="pointer" onClick={onClose}>
+                Some4
+              </Text>
+              <Text cursor="pointer" onClick={onClose}>
+                Some5
+              </Text>
+            </Flex>
+          </DrawerBody>
+          <DrawerFooter>
+            <Flex alignItems={'self-start'} flexDir={'column'} justifyContent={'start'} className="w-full block" gap={4} >
+              <Flex alignItems={'center'} gap={4} fontSize={'sm'}><FaLocationDot />
+                <Text>Rishikesh, India</Text>
+              </Flex>
+              <Flex alignItems={'center'} gap={4} fontSize={'sm'}><IoMdCall />
+                <Text>Rishikesh, India</Text>
+              </Flex>
+              <Flex alignItems={'center'} gap={4} fontSize={'sm'}><IoMail />
+                <Text>Rishikesh, India</Text>
+              </Flex>
+            </Flex>
 
-export default Navbar;
+          </DrawerFooter>
+          <Flex className="bloxk w-full flex justify-center gap-4 py-10">
+            <FaInstagram className="text-4xl  rounded-full p-1" />
+            <FaInstagram className="text-4xl  rounded-full p-1" />
+            <FaInstagram className="text-4xl  rounded-full p-1" />
+          </Flex>
+        </DrawerContent>
+      </Drawer>
+
+    </>
+  )
+}
+
+export default Navbar

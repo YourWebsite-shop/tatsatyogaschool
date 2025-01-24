@@ -1,6 +1,5 @@
 import AboutUs from '@/components/home/AboutUs'
 import Contact from '@/components/home/Contact'
-import Gallery from '@/components/home/Gallery'
 import Hero from '@/components/home/Hero'
 import Programs from '@/components/home/Programs'
 import Schedule from '@/components/home/Schedule'
@@ -21,7 +20,7 @@ const Home: React.FC = () => {
       <AboutUs />
       <YogaRetreat />
       {/* <Courses /> */}
-      <Gallery />
+      {/* <Gallery /> */}
       <Programs />
       <Benefits />
       
