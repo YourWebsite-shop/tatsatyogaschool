@@ -113,7 +113,7 @@ const FAQ: React.FC = () => {
     },
   ];
   return (
-    <div className='bg-[#EAE6E1]'>
+    <div className='bg-[#EAE6E1] lg:pb-44'>
       <div className='max-w-[1280px] mx-auto'>
       <h3 className=' text-4xl py-20 leading-[45px] max-w-[260px] mx-auto lg:max-w-none lg:text-6xl text-center kaftan-text lg:py-32'>FREQUENTLY ASKED QUESTIONS</h3>
 
