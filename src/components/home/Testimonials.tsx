@@ -6,110 +6,116 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
+import mark1 from "@/assets/marques/mark1.jpg"
+import Image, {StaticImageData} from "next/image";
 
 // TestimonialCard Component
 const TestimonialCard = ({
   quote,
   author,
-  role,
-  rating,
+  img
 }: {
   quote: string;
   author: string;
-  role: string;
-  rating: number;
+  img: StaticImageData
 }) => {
   return (
-    <div className="bg-white p-8 rounded-lg shadow-lg relative animate__animated animate__fadeIn">
-      <div className="absolute top-0 right-0 w-20 h-20 bg-yellow-400 rounded-bl-full"></div>
-      <svg
-        className="w-12 h-12 text-yellow-400 mb-6"
-        fill="currentColor"
-        viewBox="0 0 32 32"
-      >
-        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"></path>
-      </svg>
-      <p className="text-neutral-600 mb-6 relative z-10">{quote}</p>
-      <div className="flex items-center">
-        <div className="ml-4">
-          <p className="font-semibold text-neutral-800 -translate-x-4">{author}</p>
-          <p className="text-sm text-neutral-600">{role}</p>
-          <div className="flex items-center mt-2">
-            {[...Array(rating)].map((_, i) => (
-              <svg
-                key={i}
-                className="w-5 h-5 text-yellow-400"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-                aria-hidden="true"
-              >
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-            ))}
-          </div>
-        </div>
-      </div>
+    <div className="bg-transparent flex flex-col items-center">
+      <Image src={img} alt="" width={1000} className="w-20 rounded-full" />
+      <p className="font-[500]">{author}</p>
+      <p className="text-xs max-w-[250px]">{quote}</p>
     </div>
   );
 };
 
 const Testimonials = () => {
+
+
   const testimonials = [
     {
+      img: mark1,
       quote:
         "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
       author: "Sarah Mitchell",
-      role: "200 Hour YTT Graduate",
-      rating: 5,
+
     },
     {
+      img: mark1,
       quote:
         "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
       author: "Sarah Mitchell",
-      role: "200 Hour YTT Graduate",
-      rating: 5,
+
     },
     {
+      img: mark1,
       quote:
         "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
       author: "Sarah Mitchell",
-      role: "200 Hour YTT Graduate",
-      rating: 5,
+
     },
     {
+      img: mark1,
       quote:
         "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
       author: "Sarah Mitchell",
-      role: "200 Hour YTT Graduate",
-      rating: 5,
+
     },
     {
+      img: mark1,
       quote:
         "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
       author: "Sarah Mitchell",
-      role: "200 Hour YTT Graduate",
-      rating: 5,
+
     },
     {
+      img: mark1,
       quote:
         "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
       author: "Sarah Mitchell",
-      role: "200 Hour YTT Graduate",
-      rating: 5,
+
     },
     {
+      img: mark1,
       quote:
         "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
       author: "Sarah Mitchell",
-      role: "200 Hour YTT Graduate",
-      rating: 5,
+
     },
+    {
+      img: mark1,
+      quote:
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+      author: "Sarah Mitchell",
+
+    },
+    {
+      img: mark1,
+      quote:
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+      author: "Sarah Mitchell",
+
+    },
+    {
+      img: mark1,
+      quote:
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+      author: "Sarah Mitchell",
+
+    },
+    {
+      img: mark1,
+      quote:
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+      author: "Sarah Mitchell",
+
+    },
+   
   ];
 
   return (
     <section
       id="testimonials"
-      className=" bg-gradient-to-b from-white to-neutral-100 overflow-hidden mt-[80px] sm:mt-[100px] lg:mt-[120px] pb-[40px] sm:pb-[50px] lg:pb-[60px]"
+      className=" bg-[#EAE6E1] overflow-hidden mt-[80px] sm:mt-[100px] lg:mt-[120px] pb-[40px] sm:pb-[50px] lg:pb-[60px]"
     >
       <div className=" mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
@@ -118,42 +124,46 @@ const Testimonials = () => {
           id="el-d9xysvqk"
         >
           <h2
-            className="lg:text-[36px] sm:text-[28px] text-[24px] font-bold text-Black lg:mb-4 sm:mb-2 mb-1"
+            className="lg:text-[36px] sm:text-[28px] text-[24px]  text-Black lg:mb-4 sm:mb-2 mb-1 kaftan-text lg:text-5xl py-20 font-normal"
             id="el-sfukqcej"
           >
-            Student Experiences
+            WHAT OUR VISITOS ARE SAYING
           </h2>
-          <div
-            className="lg:w-[96px] sm:w-[80px] w-[72px] h-1 bg-[#E67825] mx-auto lg:mb-6 sm:mb-5 mb-3"
-            id="el-3zj1b12y"
-          ></div>
-          <p
-            className="lg:text-[20px] sm:text-[16px] text-[16px] text-gray-500"
-            id="el-bvy7ul6w"
-          >
-            Hear what our students have to say about their transformative
-            journey with us
-          </p>
+
+
         </div>
 
         {/* Swiper Section */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 ">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8  ">
           <Swiper
-            spaceBetween={50}
-            slidesPerView={1.5} // Make the previous and next slides partially visible
-            centeredSlides={true} // Center the active slide
+            spaceBetween={10}
+            slidesPerView={3}
+            onSlideChange={(swiper) => {
+              const { slides, activeIndex } = swiper;
+              slides.forEach((slide, index) => {
+                slide.style.transform = ""; // Reset transforms
+                if (index === (activeIndex + 3) % slides.length || index === (activeIndex-2 + slides.length) % slides.length) {
+                  slide.style.transform = "translateY(-200px)";
+                }
+              });
+            }}
+
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
-              1024: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+              
             }}
             speed={800}
             autoplay={{
               delay: 3000,
-              disableOnInteraction: false,
+             
             }}
             loop={true}
             modules={[Autoplay]}
+
+            style={{padding:"0px 0px 200px 0px"}}
+            
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
