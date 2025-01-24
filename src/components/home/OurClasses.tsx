@@ -14,46 +14,60 @@ import Carousel4 from '@/assets/home/carousel4.jpg'
 
 const OurClasses = () => {
   const [activeClass, setActiveClass] = useState("100 Hours");
+  const swiperRef = useRef<any>(null);
 
   const classes = [
     {
       name: "100 Hours",
-      description: "Perfect for beginners seeking to establish a strong foundation in yoga. This introductory course covers essential asanas, basic pranayama techniques, and fundamental yoga philosophy. Ideal for those starting their yoga journey or wanting to deepen their personal practice.",
+      description: "Our foundational yoga teacher training program designed for aspiring instructors and dedicated practitioners. This comprehensive course covers essential asanas, pranayama techniques, teaching methodology, anatomy basics, and yoga philosophy. Perfect for those beginning their teaching journey or deepening their practice.",
       specifics: "Basic asanas, breathing techniques, meditation, anatomy basics, yoga philosophy",
       schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
-      bookingLink: "https://example.com/book/100-hours"
+      bookingLink: "https://example.com/book/100-hours",
+      image: Carousel1
     },
     {
       name: "200 Hours", 
-      description: "A comprehensive foundation course certified by Yoga Alliance. Dive deep into asana practice, teaching methodology, anatomy, philosophy, and practicum. Suitable for aspiring yoga teachers and dedicated practitioners looking to expand their knowledge.",
+      description: "An immersive yoga teacher training program certified by Yoga Alliance. This transformative course provides in-depth study of asana practice, teaching methodology, anatomy, philosophy and practicum. Students will develop strong teaching skills while deepening their understanding of yoga's traditional roots.",
       specifics: "Teaching methodology, advanced asanas, anatomy, philosophy, pranayama, class planning",
       schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
-      bookingLink: "https://example.com/book/200-hours"
+      bookingLink: "https://example.com/book/200-hours",
+      image: Carousel2
     },
     {
       name: "300 Hours",
-      description: "Advanced training for certified 200-hour teachers. Explore complex asanas, advanced teaching skills, therapeutic applications, and specialized topics. Deepen your expertise with intensive study of yoga philosophy and advanced pranayama techniques.",
+      description: "An advanced training program designed for certified 200-hour teachers looking to expand their expertise. This intensive course covers complex asanas, therapeutic applications, energy work and specialized teaching skills. Students will refine their teaching while exploring advanced philosophy and pranayama.",
       specifics: "Therapeutic yoga, advanced teaching, energy work, specialized populations, business skills",
       schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
-      bookingLink: "https://example.com/book/300-hours"
+      bookingLink: "https://example.com/book/300-hours",
+      image: Carousel3
     },
     {
       name: "500 Hours",
-      description: "Our most comprehensive program combining 200 and 300-hour certifications. Master advanced teaching methodologies, therapeutic yoga, energy work, and specialized populations. Become a highly skilled and versatile yoga teacher with deep understanding of traditional practices.",
+      description: "Our most comprehensive teacher training program combining foundational and advanced studies. This transformative journey covers advanced teaching methodologies, therapeutic applications, energy work and specialized populations. Perfect for those seeking complete mastery of yoga instruction.",
       specifics: "Complete mastery program, advanced therapy, specialized teaching, professional development",
       schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
-      bookingLink: "https://example.com/book/500-hours"
+      bookingLink: "https://example.com/book/500-hours",
+      image: Carousel4
     }
   ]
 
   const changeClass = (className: string) => {
     setActiveClass(className);
+    const newIndex = classes.findIndex(c => c.name === className);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(newIndex);
+    }
   }
 
   const activeClassData = classes.find(yogaClass => yogaClass.name === activeClass);
 
   const prevButtonRef = useRef<HTMLButtonElement>(null);
   const nextButtonRef = useRef<HTMLButtonElement>(null);
+
+  const handleSlideChange = (swiper: any) => {
+    const activeIndex = swiper.realIndex;
+    setActiveClass(classes[activeIndex].name);
+  };
 
   return (
     <div className='pb-12'>
@@ -107,6 +121,7 @@ const OurClasses = () => {
         
           <div className="px-8 max-w-5xl">
             <Swiper
+              ref={swiperRef}
               className="mySwiper max-w-4xl rounded-b-[48px] overflow-hidden"
               modules={[Navigation]}
               navigation={{
@@ -118,6 +133,8 @@ const OurClasses = () => {
                 disableOnInteraction: false,
               }}
               loop
+              onSlideChange={handleSlideChange}
+              initialSlide={classes.findIndex(c => c.name === activeClass)}
               onBeforeInit={(swiper) => {
                 if (swiper.params.navigation && typeof swiper.params.navigation !== 'boolean') {
                   swiper.params.navigation.prevEl = prevButtonRef.current;
@@ -125,10 +142,11 @@ const OurClasses = () => {
                 }
               }}
             >
-              <SwiperSlide><Image src={Carousel1} alt='' className="rounded-b-lg" /></SwiperSlide>
-              <SwiperSlide><Image src={Carousel2} alt='' className="rounded-b-lg" /></SwiperSlide>
-              <SwiperSlide><Image src={Carousel3} alt='' className="rounded-b-lg" /></SwiperSlide>
-              <SwiperSlide><Image src={Carousel4} alt='' className="rounded-b-lg" /></SwiperSlide>
+              {classes.map((yogaClass, index) => (
+                <SwiperSlide key={index}>
+                  <Image src={yogaClass.image} alt={yogaClass.name} className="rounded-b-lg" />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
           <button ref={nextButtonRef}>
