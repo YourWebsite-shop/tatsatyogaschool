@@ -8,7 +8,7 @@ import "swiper/css";
 import { Autoplay, Navigation } from "swiper/modules";
 import mark1 from "@/assets/marques/mark1.jpg"
 import Image, { StaticImageData } from "next/image";
-import circle from "@/assets/home/Circles.png"
+// import circle from "@/assets/home/Circles.png"
 
 // TestimonialCard Component
 const TestimonialCard = ({
