@@ -18,20 +18,20 @@ const Home: React.FC = () => {
   return (
     <div>
       <Hero />
-      <MarqCarousel />
+      {/* <MarqCarousel /> */}
       <AboutUs />
+      <Benefits />
+      <OurClasses />
       <YogaRetreat />
       {/* <Courses /> */}
       {/* <Gallery /> */}
-      <Programs />
-      <Benefits />
+      {/* <Programs /> */}
       
-      <Schedule />
+      {/* <Schedule /> */}
       <Testimonials />
       <Form />
       <Faq />
       <Contact />
-      <OurClasses />
     </div>
   )
 }

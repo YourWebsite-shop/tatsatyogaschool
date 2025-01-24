@@ -57,6 +57,8 @@ body::-webkit-scrollbar-thumb {
   transform:  translateY(0px) 
 }
 
+
+
 .swiper-slide-prev,
 .swiper-slide-next {
   transform: scale(1.4) translateY(100px ) !important;

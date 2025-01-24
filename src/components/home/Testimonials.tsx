@@ -127,7 +127,7 @@ const Testimonials = () => {
             className="lg:text-[36px] sm:text-[28px] text-[24px]  text-Black lg:mb-4 sm:mb-2 mb-1 kaftan-text lg:text-5xl py-20 font-normal"
             id="el-sfukqcej"
           >
-            WHAT OUR VISITOS ARE SAYING
+            WHAT OUR VISITORS ARE SAYING
           </h2>
 
 
