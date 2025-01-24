@@ -84,7 +84,7 @@ const ContactUs = () => {
                 We would love to hear from you.
               </Heading>
               <Text fontSize={"16px"} mb={"40px"} color={"#666666"}>
-                If you’ve got great products your making or looking to work with
+                If you&apos;ve got great products your making or looking to work with
                 us then drop us a line.
               </Text>
               <Box>
