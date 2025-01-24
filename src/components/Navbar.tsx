@@ -73,7 +73,7 @@ const Navbar = () => {
       <Drawer placement="bottom" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent bg="#F67D49" color="white" className="rounded-tr-[50px] rounded-tl-[50px]" >
-          <DrawerBody py={20} >
+          <DrawerBody py={10} >
             <Flex direction="column" align="center" gap={6} fontSize="lg">
               <Text cursor="pointer" onClick={onClose}>
                 Home
@@ -96,7 +96,7 @@ const Navbar = () => {
             </Flex>
           </DrawerBody>
           <DrawerFooter>
-            <Flex alignItems={'self-start'} flexDir={'column'} justifyContent={'start'} className="w-full block" gap={4} >
+            <Flex alignItems={'self-start'} flexDir={'column'} justifyContent={'start'} className="w-full block" gap={2} >
               <Flex alignItems={'center'} gap={4} fontSize={'sm'}><FaLocationDot />
                 <Text>Rishikesh, India</Text>
               </Flex>
@@ -109,7 +109,7 @@ const Navbar = () => {
             </Flex>
 
           </DrawerFooter>
-          <Flex className="bloxk w-full flex justify-center gap-4 py-10">
+          <Flex className="bloxk w-full flex justify-center gap-4 py-4">
             <FaInstagram className="text-4xl  rounded-full p-1" />
             <FaInstagram className="text-4xl  rounded-full p-1" />
             <FaInstagram className="text-4xl  rounded-full p-1" />

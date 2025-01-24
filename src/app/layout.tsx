@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bric.className} ${kaftan.variable} antialiased`}
+        className={`${bric.className} ${kaftan.variable} antialiased bg-[#EAE6E1]`}
       >
         <Providers>
           <Navbar />

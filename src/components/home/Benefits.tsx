@@ -1,7 +1,15 @@
 import React from "react";
+import Image from "next/image";
 
 import { IoFlowerOutline } from "react-icons/io5";
 import { WiMoonWaningCrescent5 } from "react-icons/wi";
+
+import SleepQuality from "@/assets/benefits/sleep.png"
+import ReduceStress from "@/assets/benefits/stress.png"
+import PhysicalHealth from "@/assets/benefits/health.png"
+import MentalClarity from "@/assets/benefits/clarity.png"
+import InnerPeace from "@/assets/benefits/peace.png"
+
 const gridData = [
   {
     id: 1,
@@ -9,10 +17,10 @@ const gridData = [
     description:
       "Yoga helps to increase flexibility, strength, and endurance. Regular practice can reduce chronic pain, improve joint and muscle health, and strengthen the cardiovascular system.",
     icon: (
-      <IoFlowerOutline className="text-white lg:text-[60px] sm:text-[48px] text-[32px]" />
+      <Image src={ PhysicalHealth } alt='' className="lg:w-[60px] sm:w-[48px] w-[32px]" />
     ),
     crescentIcon: (
-      <WiMoonWaningCrescent5 className=" text-[#F57D49] rotate-180 text-[18px] translate-x-32 translate-y-2 hidden lg:block absolute" />
+      <WiMoonWaningCrescent5 className="text-[#F57D49] rotate-180 text-[18px] hidden lg:block absolute left-1/2 -translate-x-1/2" />
     ),
   },
   {
@@ -21,10 +29,10 @@ const gridData = [
     description:
       "Regular Yoga and meditation can help improve concentration, memory, and mental clarity. This contributes to greater productivity and the ability to focus on tasks.",
     icon: (
-      <IoFlowerOutline className="text-white lg:text-[60px] sm:text-[48px] text-[32px]" />
+      <Image src={ MentalClarity } alt='' className="lg:w-[60px] sm:w-[48px] w-[32px]" />
     ),
     crescentIcon: (
-      <WiMoonWaningCrescent5 className=" text-[#F57D49] rotate-180 text-[24px] translate-x-32 translate-y-2 hidden lg:block absolute" />
+      <WiMoonWaningCrescent5 className="text-[#F57D49] rotate-180 text-[24px] hidden lg:block absolute left-1/2 -translate-x-1/2" />
     ),
   },
   {
@@ -33,10 +41,11 @@ const gridData = [
     description:
       "Practicing yoga helps to relax the body and mind, which can improve sleep quality and reduce sleep problems such as insomnia. Meditating before bed can also help calm the mind and make it easier to fall asleep.",
     icon: (
-      <IoFlowerOutline className="text-white lg:text-[60px] sm:text-[48px] text-[32px]" />
+      // <SleepQuality className="text-white lg:text-[60px] sm:text-[48px] text-[32px]" />
+      <Image src={ SleepQuality } alt='' className="lg:w-[60px] sm:w-[48px] w-[32px]" />
     ),
     crescentIcon: (
-      <WiMoonWaningCrescent5 className=" text-[#F57D49] text-[24px] translate-x-40 translate-y-2 hidden lg:block absolute" />
+      <WiMoonWaningCrescent5 className="text-[#F57D49] text-[24px] hidden lg:block absolute left-1/2 -translate-x-1/2" />
     ),
   },
   {
@@ -45,10 +54,10 @@ const gridData = [
     description:
       "Yoga and meditation can help you find inner harmony, balance, and peace. They promote mindfulness and spiritual growth, which helps you better understand yourself and your emotions.",
     icon: (
-      <IoFlowerOutline className="text-white lg:text-[60px] sm:text-[48px] text-[32px]" />
+      <Image src={ InnerPeace } alt='' className="lg:w-[60px] sm:w-[48px] w-[32px]" />
     ),
     crescentIcon: (
-      <WiMoonWaningCrescent5 className=" text-[#F57D49] text-[18px] translate-x-40 translate-y-2 hidden lg:block absolute" />
+      <WiMoonWaningCrescent5 className="text-[#F57D49] text-[18px] hidden lg:block absolute left-1/2 -translate-x-1/2" />
     ),
   },
   {
@@ -57,7 +66,7 @@ const gridData = [
     description:
       "Meditation and breathing practices, which are an integral part of yoga, are effective in reducing stress and anxiety. They help calm the mind, improve mood, and reduce symptoms of depression.",
     icon: (
-      <IoFlowerOutline className="text-white lg:text-[60px] sm:text-[48px] text-[32px] " />
+      <Image src={ ReduceStress } alt='' className="lg:w-[60px] sm:w-[48px] w-[32px]" />
     ),
     crescentIcon: null, // No crescent icon for this item
   },
@@ -66,14 +75,14 @@ const gridData = [
 const Benefits = () => {
   return (
     <div className="bg-[#EAE6E1] lg:px-[80px] sm:px:[50px] px-[20px] py-[100px]">
-      <h1 className="kaftan-text text-center lg:text-[53px] sm:text-[36px] text-[24px] font-medium text-[#1A1A1A] lg:pb-[72px] sm:pb-[56px] pb-[32px] ">
+      <h1 className="kaftan-text text-center lg:text-[53px] sm:text-[36px] text-[24px] font-medium text-[#1A1A1A] lg:pb-[72px] sm:pb-[56px] pb-[32px] " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         BENEFITS OF YOGA PRACTICE
       </h1>
       <div className="grid flex-row gap-[38px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
         {gridData.map((item) => (
-          <div key={item.id} className="flex flex-col items-center">
+          <div key={item.id} className="flex flex-col items-center" data-aos="fade-up" data-aos-delay={`${item.id}00`} data-aos-duration="1000">
             {item.crescentIcon && (
-              <div className="pt-4">{item.crescentIcon}</div>
+              <div className="pt-4 relative w-full">{item.crescentIcon}</div>
             )}
             <div className="bg-[#F57D49] rounded-full lg:p-2 p-1 lg:mb-5 sm:mb-3 mb-2 flex justify-center items-center">
               {item.icon}

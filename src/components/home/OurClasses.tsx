@@ -5,6 +5,7 @@ import { Navigation } from 'swiper/modules'
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { FaCalendarAlt } from "react-icons/fa";
+import { GiMeditation } from "react-icons/gi";
 import Image from 'next/image';
 import Arrow from '@/assets/arrow.png'
 import Carousel1 from '@/assets/home/carousel1.jpg'
@@ -14,40 +15,53 @@ import Carousel4 from '@/assets/home/carousel4.jpg'
 
 const OurClasses = () => {
   const [activeClass, setActiveClass] = useState("100 Hours");
+  const swiperRef = useRef<any>(null);
 
   const classes = [
     {
       name: "100 Hours",
-      description: "Perfect for beginners seeking to establish a strong foundation in yoga. This introductory course covers essential asanas, basic pranayama techniques, and fundamental yoga philosophy. Ideal for those starting their yoga journey or wanting to deepen their personal practice.",
+      description: "Our foundational yoga teacher training program designed for aspiring instructors and dedicated practitioners. This comprehensive course covers essential asanas, pranayama techniques, teaching methodology, anatomy basics, and yoga philosophy. Perfect for those beginning their teaching journey or deepening their practice.",
       specifics: "Basic asanas, breathing techniques, meditation, anatomy basics, yoga philosophy",
-      schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
-      bookingLink: "https://example.com/book/100-hours"
+      schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
+      bookingLink: "https://example.com/book/100-hours",
+      image: Carousel1,
+      teacher: "Sarah Anderson"
     },
     {
       name: "200 Hours", 
-      description: "A comprehensive foundation course certified by Yoga Alliance. Dive deep into asana practice, teaching methodology, anatomy, philosophy, and practicum. Suitable for aspiring yoga teachers and dedicated practitioners looking to expand their knowledge.",
+      description: "An immersive yoga teacher training program certified by Yoga Alliance. This transformative course provides in-depth study of asana practice, teaching methodology, anatomy, philosophy and practicum. Students will develop strong teaching skills while deepening their understanding of yoga's traditional roots.",
       specifics: "Teaching methodology, advanced asanas, anatomy, philosophy, pranayama, class planning",
-      schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
-      bookingLink: "https://example.com/book/200-hours"
+      schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
+      bookingLink: "https://example.com/book/200-hours",
+      image: Carousel2,
+      teacher: "Michael Chen"
     },
     {
       name: "300 Hours",
-      description: "Advanced training for certified 200-hour teachers. Explore complex asanas, advanced teaching skills, therapeutic applications, and specialized topics. Deepen your expertise with intensive study of yoga philosophy and advanced pranayama techniques.",
+      description: "An advanced training program designed for certified 200-hour teachers looking to expand their expertise. This intensive course covers complex asanas, therapeutic applications, energy work and specialized teaching skills. Students will refine their teaching while exploring advanced philosophy and pranayama.",
       specifics: "Therapeutic yoga, advanced teaching, energy work, specialized populations, business skills",
-      schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
-      bookingLink: "https://example.com/book/300-hours"
+      schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
+      bookingLink: "https://example.com/book/300-hours",
+      image: Carousel3,
+      teacher: "Emma Patel"
     },
     {
       name: "500 Hours",
-      description: "Our most comprehensive program combining 200 and 300-hour certifications. Master advanced teaching methodologies, therapeutic yoga, energy work, and specialized populations. Become a highly skilled and versatile yoga teacher with deep understanding of traditional practices.",
+      description: "Our most comprehensive teacher training program combining foundational and advanced studies. This transformative journey covers advanced teaching methodologies, therapeutic applications, energy work and specialized populations. Perfect for those seeking complete mastery of yoga instruction.",
       specifics: "Complete mastery program, advanced therapy, specialized teaching, professional development",
-      schedule: "Mon-Wed 8:30 - 9:30 am, 6:30-7:30 pm",
-      bookingLink: "https://example.com/book/500-hours"
+      schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
+      bookingLink: "https://example.com/book/500-hours",
+      image: Carousel4,
+      teacher: "David Rodriguez"
     }
   ]
 
   const changeClass = (className: string) => {
     setActiveClass(className);
+    const newIndex = classes.findIndex(c => c.name === className);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(newIndex);
+    }
   }
 
   const activeClassData = classes.find(yogaClass => yogaClass.name === activeClass);
@@ -55,16 +69,21 @@ const OurClasses = () => {
   const prevButtonRef = useRef<HTMLButtonElement>(null);
   const nextButtonRef = useRef<HTMLButtonElement>(null);
 
+  const handleSlideChange = (swiper: any) => {
+    const activeIndex = swiper.realIndex;
+    setActiveClass(classes[activeIndex].name);
+  };
+
   return (
     <div className='pb-12'>
       <div className='bg-[#1A1A1A] pt-5 pb-96 rounded-t-[60px]'>
-        <div className='kaftan-text my-8 text-white text-center text-5xl font-bold tracking-widest'>OUR CLASSES</div>
-        <div className='flex flex-wrap justify-center gap-4 px-4'>
+        <div className='kaftan-text my-8 text-white text-center lg:text-5xl md:text-4xl text-3xl font-bold tracking-widest'>OUR CLASSES</div>
+        <div className='flex md:flex-wrap md:justify-center gap-4 px-4 overflow-x-auto md:overflow-visible whitespace-nowrap scrollbar-hide'>
           {classes.map((yogaClass, index) => (
-            <div key={index} className="relative">
+            <div key={index} className="relative inline-block md:block">
               <div
                 onClick={() => changeClass(yogaClass.name)}
-                className={`px-8 py-3 rounded-full text-sm font-medium cursor-pointer transition-colors
+                className={`lg:px-8 md:px-6 px-4 py-3 rounded-full lg:text-sm text-xs font-medium cursor-pointer transition-colors
                   ${yogaClass.name === activeClass ?
                     'text-[#F67D49]' :
                     'text-white'}`}
@@ -72,41 +91,51 @@ const OurClasses = () => {
                 {yogaClass.name}
               </div>
               {yogaClass.name === activeClass && (
-                <div className="absolute top-14 left-1/2 -translate-x-1/2 w-[300px] text-white text-center">
+                <div className="absolute top-14 left-1/2 -translate-x-1/2 w-full md:w-[300px] text-white text-center">
                   <div className="absolute left-1/2 -translate-x-1/2 -top-2 w-2 h-2 bg-[#F67D49] rounded-full"></div>
                 </div>
               )}
             </div>
           ))}
         </div>
-        <div className='max-w-5xl mx-auto flex gap-8 px-10 mt-16 text-white'>
-          <div className='w-[50%]'>
+        <div className='max-w-5xl mx-auto flex flex-col lg:flex-row gap-8 px-4 lg:px-10 mt-16 text-white'>
+          <div className='lg:w-[50%] w-full'>
               <div className='text-lg font-semibold mb-4'>ABOUT</div>
               <div className='text-sm'>{activeClassData?.description}</div>
           </div>
-          <div className='w-[25%]'>
+          <div className='lg:w-[25%] md:w-[50%] w-full'>
             <div className='text-lg font-semibold mb-4'>SPECIFICS</div>
             <div className='text-sm'>{activeClassData?.specifics}</div>
           </div>
-          <div className='w-[25%]'>
+          <div className='lg:w-[25%] md:w-[50%] w-full'>
             <div className='text-lg font-semibold mb-4'>
               SCHEDULE
             </div>
-            <div className='text-sm flex'><div className="inline-flex items-center justify-center bg-gray-700 rounded-full w-8 h-8 mr-2">
-                <FaCalendarAlt />
-              </div><div>{activeClassData?.schedule}</div></div>
+            <div className='text-sm flex mb-2'>
+              <div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
+                <FaCalendarAlt className="mx-[9px]" />
+              </div>
+              <div className="flex-1">{activeClassData?.schedule}</div>
+            </div>
+            <div className='text-sm flex'>
+              <div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
+                <GiMeditation className="mx-[9px]" />
+              </div>
+              <div className="flex-1"><span className='font-semibold text-xs'>INSTRUCTOR</span> <br />{activeClassData?.teacher}</div>
+            </div>
           </div>
         </div>
       </div>
  
       <div className='relative -mt-80'>
         <div className="flex max-w-6xl mx-auto mt-8">
-          <button ref={prevButtonRef}>
+          <button ref={prevButtonRef} className="hidden md:block">
             <Image src={Arrow} alt="Previous" width={90} height={90} className="transform scale-x-[-1]" />
           </button>
         
-          <div className="px-8 max-w-5xl">
+          <div className="px-2 md:px-8 w-full max-w-5xl">
             <Swiper
+              ref={swiperRef}
               className="mySwiper max-w-4xl rounded-b-[48px] overflow-hidden"
               modules={[Navigation]}
               navigation={{
@@ -118,6 +147,8 @@ const OurClasses = () => {
                 disableOnInteraction: false,
               }}
               loop
+              onSlideChange={handleSlideChange}
+              initialSlide={classes.findIndex(c => c.name === activeClass)}
               onBeforeInit={(swiper) => {
                 if (swiper.params.navigation && typeof swiper.params.navigation !== 'boolean') {
                   swiper.params.navigation.prevEl = prevButtonRef.current;
@@ -125,13 +156,14 @@ const OurClasses = () => {
                 }
               }}
             >
-              <SwiperSlide><Image src={Carousel1} alt='' className="rounded-b-lg" /></SwiperSlide>
-              <SwiperSlide><Image src={Carousel2} alt='' className="rounded-b-lg" /></SwiperSlide>
-              <SwiperSlide><Image src={Carousel3} alt='' className="rounded-b-lg" /></SwiperSlide>
-              <SwiperSlide><Image src={Carousel4} alt='' className="rounded-b-lg" /></SwiperSlide>
+              {classes.map((yogaClass, index) => (
+                <SwiperSlide key={index}>
+                  <Image src={yogaClass.image} alt={yogaClass.name} className="rounded-b-lg w-full h-auto" />
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
-          <button ref={nextButtonRef}>
+          <button ref={nextButtonRef} className="hidden md:block">
             <Image src={Arrow} alt="Next" width={90} height={90} />
           </button>
         </div>
