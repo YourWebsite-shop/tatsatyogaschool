@@ -117,6 +117,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 
+@media (max-width: 640px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important; /* Hide navigation on small screens */
+  }
+}
+
+
 @keyframes test {
   from {
     transform: translateY(20px);
