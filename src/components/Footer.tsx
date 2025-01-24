@@ -88,18 +88,18 @@ const Footer: React.FC = () => {
 
           {/* Address section */}
           <div className="lg:pb-[16px] sm:pb-[20px] pb-[16px]">
-            <p className="flex text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]  ">
-              <div className="aspect-square ">
+            <div className="flex text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]  ">
+              <p className="aspect-square ">
                 <TiLocation className="lg:mr-2 mr-1 h-[24px] w-[28px] sm:h-[21px] sm:w-[30px] lg:h-[32px] lg:w-[32px] bg-gray-800 rounded-full p-0.5 lg:-translate-y-1 sm:mt-[3px] mt-[0px] " />
-              </div>
+              </p>
               Bairaj Neelkanth Road, Laxman Jhula, Rishikesh, Uttarakhand 249302
-            </p>
+            </div>
           </div>
 
           {/* Telephone section */}
           <div className="flex text-[#EAE6E1] lg:pb-[16px] sm:pb-[20px] pb-[16px]">
             <div className="aspect-square">
-            <BsTelephoneFill className="lg:mr-2 h-[24px] w-[24px] mr-1 sm:h-[21px] sm:w-[21px] lg:h-[30px] lg:w-[30px] bg-gray-800 rounded-full p-0.5 sm:mt-[2px] lg:-translate-y-1 sm:mb-[0px] mb-[2px]" />
+              <BsTelephoneFill className="lg:mr-2 h-[24px] w-[24px] mr-1 sm:h-[21px] sm:w-[21px] lg:h-[30px] lg:w-[30px] bg-gray-800 rounded-full p-0.5 sm:mt-[2px] lg:-translate-y-1 sm:mb-[0px] mb-[2px]" />
             </div>
             <p className=" text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
               70888 55572
@@ -108,12 +108,12 @@ const Footer: React.FC = () => {
 
           {/* Email section */}
           <div className="lg:pb-[30px] sm:pb-[36px] pb-[26px]">
-            <p className="flex text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
-              <div className="aspect-square">
-              <IoMail className="lg:mr-2 mr-1 h-[24px] w-[24px] sm:h-[21px] sm:w-[21px] lg:h-[30px] lg:w-[30px] bg-gray-800 rounded-full p-0.5 lg:-translate-y-2 sm:mt-[3px] mb-[2px] sm:mb-[0px] " />
-              </div>
+            <div className="flex text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
+              <p className="aspect-square">
+                <IoMail className="lg:mr-2 mr-1 h-[24px] w-[24px] sm:h-[21px] sm:w-[21px] lg:h-[30px] lg:w-[30px] bg-gray-800 rounded-full p-0.5 lg:-translate-y-2 sm:mt-[3px] mb-[2px] sm:mb-[0px] " />
+              </p>
               tatsayogaschool@gmail.com
-            </p>
+            </div>
           </div>
 
           {/* Social Media Section */}
