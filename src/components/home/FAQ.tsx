@@ -1,15 +1,19 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import {
   Accordion,
   AccordionItem,
   AccordionButton,
   AccordionPanel,
   AccordionIcon,
-  Text
+  Text,
+  Button
 } from '@chakra-ui/react'
 
 
 const FAQ: React.FC = () => {
+  const [visibleFAQs, setVisibleFAQs] = useState(5);
+
   const FAQData = [
     {
       question: "What is Tatsat Yoga School?",
@@ -112,13 +116,18 @@ const FAQ: React.FC = () => {
         "Yes, we organize extracurricular activities such as nature walks, excursions to nearby spiritual sites, and evening kirtan sessions to enhance your overall experience.",
     },
   ];
+
+  const loadMore = () => {
+    setVisibleFAQs(prev => Math.min(prev + 5, FAQData.length));
+  };
+
   return (
     <div className='bg-[#EAE6E1] pb-44'>
       <div className='max-w-[1280px] mx-auto'>
       <h3 className=' text-4xl py-20 leading-[45px] max-w-[260px] mx-auto lg:max-w-none lg:text-6xl text-center kaftan-text lg:py-32'  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">FREQUENTLY ASKED QUESTIONS</h3>
 
       <Accordion allowMultiple={true} mx={4}>
-        {FAQData.map((faq, i) => (
+        {FAQData.slice(0, visibleFAQs).map((faq, i) => (
           <AccordionItem key={i} borderColor={'orange'} py={2} >
           <h2>
           <AccordionButton>
@@ -135,6 +144,19 @@ const FAQ: React.FC = () => {
         </AccordionItem>
         ))}
       </Accordion>
+
+      {visibleFAQs < FAQData.length && (
+        <div className="flex justify-end mt-8 mr-4">
+          <Button 
+            onClick={loadMore}
+            colorScheme="orange"
+            variant="outline"
+            size="sm"
+          >
+            Load More FAQs
+          </Button>
+        </div>
+      )}
     </div>
     </div>
   )
