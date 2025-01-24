@@ -7,7 +7,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 import mark1 from "@/assets/marques/mark1.jpg"
-import Image, {StaticImageData} from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 // TestimonialCard Component
 const TestimonialCard = ({
@@ -21,7 +21,7 @@ const TestimonialCard = ({
 }) => {
   return (
     <div className="bg-transparent flex flex-col items-center">
-      <Image src={img} alt="" width={1000} className="w-20 rounded-full" />
+      <Image src={img} alt="" width={1000} className=" w-44 lg:w-20 rounded-full" />
       <p className="font-[500]">{author}</p>
       <p className="text-xs max-w-[250px]">{quote}</p>
     </div>
@@ -35,81 +35,83 @@ const Testimonials = () => {
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
     {
       img: mark1,
       quote:
-        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. The peaceful environment of Rishikesh combined with the authentic teachings has deeply transformed my practice.",
+        "The experience at Tatsat Yoga School was truly life-changing. The teachers are incredibly knowledgeable and supportive. ",
       author: "Sarah Mitchell",
 
     },
-   
+
+
+
   ];
 
   return (
@@ -134,36 +136,31 @@ const Testimonials = () => {
         </div>
 
         {/* Swiper Section */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8  ">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
           <Swiper
+            className="circular-slider"
             spaceBetween={10}
-            slidesPerView={3}
+            slidesPerView={1}
             onSlideChange={(swiper) => {
               const { slides, activeIndex } = swiper;
               slides.forEach((slide, index) => {
                 slide.style.transform = ""; // Reset transforms
-                if (index === (activeIndex + 3) % slides.length || index === (activeIndex-2 + slides.length) % slides.length) {
-                  slide.style.transform = "translateY(-200px)";
+                if (index === (activeIndex + 3) % slides.length || index === (activeIndex - 3 + slides.length) % slides.length) {
+                  slide.style.transform = "translateY(-300px)";
                 }
               });
             }}
-
             breakpoints={{
               640: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
               1024: { slidesPerView: 3 },
-              
             }}
             speed={800}
             autoplay={{
               delay: 3000,
-             
             }}
             loop={true}
             modules={[Autoplay]}
-
-            style={{padding:"0px 0px 200px 0px"}}
-            
+            style={{ padding: "0px 0px 200px 0px" }}
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
@@ -172,6 +169,7 @@ const Testimonials = () => {
             ))}
           </Swiper>
         </div>
+
       </div>
     </section>
   );
