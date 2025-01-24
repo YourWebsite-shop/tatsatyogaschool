@@ -1,7 +1,6 @@
 import React from "react";
 import Image from "next/image";
 
-import { IoFlowerOutline } from "react-icons/io5";
 import { WiMoonWaningCrescent5 } from "react-icons/wi";
 
 import SleepQuality from "@/assets/benefits/sleep.png"
