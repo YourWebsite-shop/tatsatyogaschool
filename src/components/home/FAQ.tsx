@@ -113,9 +113,9 @@ const FAQ: React.FC = () => {
     },
   ];
   return (
-    <div className='bg-[#EAE6E1] lg:pb-44'>
+    <div className='bg-[#EAE6E1] pb-44'>
       <div className='max-w-[1280px] mx-auto'>
-      <h3 className=' text-4xl py-20 leading-[45px] max-w-[260px] mx-auto lg:max-w-none lg:text-6xl text-center kaftan-text lg:py-32'>FREQUENTLY ASKED QUESTIONS</h3>
+      <h3 className=' text-4xl py-20 leading-[45px] max-w-[260px] mx-auto lg:max-w-none lg:text-6xl text-center kaftan-text lg:py-32'  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">FREQUENTLY ASKED QUESTIONS</h3>
 
       <Accordion allowMultiple={true} mx={4}>
         {FAQData.map((faq, i) => (
