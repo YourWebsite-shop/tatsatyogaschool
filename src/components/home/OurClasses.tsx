@@ -114,10 +114,10 @@ const OurClasses = () => {
             <div className='text-sm flex'><div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
                 <FaCalendarAlt className="mx-[9px]" />
               </div><div className="flex-1">{activeClassData?.schedule}</div></div>
-            <div className='text-lg font-semibold mb-4 mt-8'>
+            {/* <div className='text-lg font-semibold mb-4 mt-8'>
               TEACHER
             </div>
-            <div className='text-sm'>{activeClassData?.teacher}</div>
+            <div className='text-sm'>{activeClassData?.teacher}</div> */}
           </div>
         </div>
       </div>
