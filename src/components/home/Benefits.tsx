@@ -75,12 +75,12 @@ const gridData = [
 const Benefits = () => {
   return (
     <div className="bg-[#EAE6E1] lg:px-[80px] sm:px:[50px] px-[20px] py-[100px]">
-      <h1 className="kaftan-text text-center lg:text-[53px] sm:text-[36px] text-[24px] font-medium text-[#1A1A1A] lg:pb-[72px] sm:pb-[56px] pb-[32px] ">
+      <h1 className="kaftan-text text-center lg:text-[53px] sm:text-[36px] text-[24px] font-medium text-[#1A1A1A] lg:pb-[72px] sm:pb-[56px] pb-[32px] " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         BENEFITS OF YOGA PRACTICE
       </h1>
       <div className="grid flex-row gap-[38px] grid-cols-1 sm:grid-cols-2 lg:grid-cols-5">
         {gridData.map((item) => (
-          <div key={item.id} className="flex flex-col items-center">
+          <div key={item.id} className="flex flex-col items-center" data-aos="fade-up" data-aos-delay={`${item.id}00`} data-aos-duration="1000">
             {item.crescentIcon && (
               <div className="pt-4 relative w-full">{item.crescentIcon}</div>
             )}
