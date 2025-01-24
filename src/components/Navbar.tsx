@@ -30,7 +30,7 @@ const Navbar = () => {
         align="center"
         justify="space-between"
         px={6}
-        py={{ base: 0, lg: 4 }}
+        py={{ base: 2, lg: 4 }}
         bg="#F67D49"
         color="white"
         position="relative"
@@ -60,12 +60,12 @@ const Navbar = () => {
 
         >
           <Text cursor="pointer" className="fade-animation">Home</Text>
-          <Text cursor="pointer" className="fade-animation">About</Text>
-          <Text cursor="pointer" className="fade-animation">Some2</Text>
+          <Text cursor="pointer" className="fade-animation">About Us</Text>
+          <Text cursor="pointer" className="fade-animation">Yoga Retreat</Text>
           <Image src={logo} alt="logo" width={1000} className="w-8 lg:w-20  fade-animation" />
-          <Text cursor="pointer" className="fade-animation">Some3</Text>
-          <Text cursor="pointer" className="fade-animation">Some3</Text>
-          <Text cursor="pointer" className="fade-animation">Some3</Text>
+          <Text cursor="pointer" className="fade-animation">Courses</Text>
+          <Text cursor="pointer" className="fade-animation">Contact US</Text>
+          <Text cursor="pointer" className="fade-animation">Book Now</Text>
         </Flex>
       </Flex>
 
@@ -79,19 +79,19 @@ const Navbar = () => {
                 Home
               </Text>
               <Text cursor="pointer" onClick={onClose}>
-                About
+                About Us
               </Text>
               <Text cursor="pointer" onClick={onClose}>
-                Some2
+                Yoga Retreat
               </Text>
               <Text cursor="pointer" onClick={onClose}>
-                Some3
+                Courses
               </Text>
               <Text cursor="pointer" onClick={onClose}>
-                Some4
+                Contact Us
               </Text>
               <Text cursor="pointer" onClick={onClose}>
-                Some5
+                Book Now
               </Text>
             </Flex>
           </DrawerBody>
