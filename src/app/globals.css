@@ -47,31 +47,34 @@ body::-webkit-scrollbar-thumb {
   transition: transform 0.5s ease;
 }
 
-.swiper-slide {
+
+
+
+@media (min-width:1024px) {
+  /* Scoped CSS for the circular-slider */
+.circular-slider .swiper-slide {
   flex-shrink: 0;
   width: 200px;
   height: 300px;
-  margin: 0 10px;
   transition: all 0.5s ease, opacity 0.5s ease;
   transform-origin: center;
-  transform:  translateY(0px) 
+  transform: translateY(0px);
 }
 
 
-
-.swiper-slide-prev,
-.swiper-slide-next {
-  transform: scale(1.4) translateY(100px ) !important;
-  
+.circular-slider .swiper-slide-next {
+  transform: scale(1.5) translateY(100px) !important;
 }
 
-.swiper-slide-active  {
-  transform: scale(1) translateY(0); /* Active slide in the center */
+.circular-slider .swiper-slide-prev {
+  transform: translateY(-300px);
 }
 
+}
 
-
-
+/* .circular-slider .swiper-slide-active {
+  transform: scale(1) translateY(-100) !important;
+} */
 
 
 
