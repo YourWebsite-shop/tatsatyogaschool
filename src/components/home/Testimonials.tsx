@@ -20,7 +20,7 @@ const TestimonialCard = ({
   img: StaticImageData
 }) => {
   return (
-    <div className="bg-transparent flex flex-col items-center">
+    <div className="bg-transparent flex flex-col items-center"  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
       <Image src={img} alt="" width={1000} className=" w-44 lg:w-20 rounded-full" />
       <p className="font-[500]">{author}</p>
       <p className="text-xs max-w-[250px]">{quote}</p>
@@ -169,7 +169,7 @@ const Testimonials = () => {
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
-                <TestimonialCard {...testimonial} />
+                <TestimonialCard {...testimonial}  />
               </SwiperSlide>
             ))}
           </Swiper>
