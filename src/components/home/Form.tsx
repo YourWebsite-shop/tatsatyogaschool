@@ -25,7 +25,7 @@ const Form = () => {
         className="rounded-t-[64px] object-cover brightness-75"
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
-        <h1 className="kaftan-text text-center text-2xl md:text-4xl lg:text-5xl font-medium text-white pb-6 md:pb-8 lg:pb-10 max-w-3xl">
+        <h1 className="kaftan-text text-center text-2xl md:text-4xl lg:text-5xl font-medium text-white pb-6 md:pb-8 lg:pb-10 max-w-3xl"   data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           READY FOR A JOURNEY TO WELLNESS?
         </h1>
 

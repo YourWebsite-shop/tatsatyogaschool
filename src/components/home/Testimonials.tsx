@@ -8,6 +8,7 @@ import "swiper/css";
 import { Autoplay, Navigation } from "swiper/modules";
 import mark1 from "@/assets/marques/mark1.jpg"
 import Image, { StaticImageData } from "next/image";
+import circle from "@/assets/home/Circles.png"
 
 // TestimonialCard Component
 const TestimonialCard = ({
@@ -139,6 +140,7 @@ const Testimonials = () => {
   
         {/* Swiper Section */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+          {/* <Image src={circle} width={1000} alt="" className="absolute w-[300px] left-[51%] -translate-y-[120px] lg:-translate-y-0 lg:w-[200px]  rotate-180 lg:left-[49.5%] -translate-x-1/2 "  /> */}
           <Swiper
             className="circular-slider"
             spaceBetween={10}
