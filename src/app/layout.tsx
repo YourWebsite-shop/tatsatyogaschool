@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import 'aos/dist/aos.css'
 import { Providers } from "./providers";
-import Navbar from "@/components/Navbar";
+
 import Footer from "@/components/Footer";
 const bric = Bricolage_Grotesque({ subsets: ['latin'], weight: ["200", "300", "400", "500", "600", "700", "800"] })
 

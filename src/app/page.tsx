@@ -6,6 +6,9 @@ import Schedule from '@/components/home/Schedule'
 import Testimonials from '@/components/home/Testimonials'
 import MarqCarousel from '@/components/home/MarqCarousel'
 import Faq from '@/components/home/FAQ'
+import Benefits from '@/components/home/Benefits'
+import YogaRetreat from '@/components/home/YogaRetreat'
+import Form from "@/components/home/Form"
 
 import React from 'react'
 
@@ -15,11 +18,15 @@ const Home: React.FC = () => {
       <Hero />
       <MarqCarousel />
       <AboutUs />
+      <YogaRetreat />
       {/* <Courses /> */}
       {/* <Gallery /> */}
       <Programs />
+      <Benefits />
+      
       <Schedule />
       <Testimonials />
+      <Form />
       <Faq />
       <Contact />
     </div>
