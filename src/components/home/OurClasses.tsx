@@ -25,7 +25,7 @@ const OurClasses = () => {
       schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
       bookingLink: "https://example.com/book/100-hours",
       image: Carousel1,
-      teacher: "Sarah Johnson - RYT 500, 10 years teaching experience"
+      teacher: "Sarah Anderson"
     },
     {
       name: "200 Hours", 
@@ -34,7 +34,7 @@ const OurClasses = () => {
       schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
       bookingLink: "https://example.com/book/200-hours",
       image: Carousel2,
-      teacher: "Michael Chen - E-RYT 500, 15 years teaching experience"
+      teacher: "Michael Chen"
     },
     {
       name: "300 Hours",
@@ -43,7 +43,7 @@ const OurClasses = () => {
       schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
       bookingLink: "https://example.com/book/300-hours",
       image: Carousel3,
-      teacher: "Priya Patel - E-RYT 500, 12 years teaching experience"
+      teacher: "Emma Patel"
     },
     {
       name: "500 Hours",
@@ -52,7 +52,7 @@ const OurClasses = () => {
       schedule: "Mon-Wed 8:30 - 9:30 am, Friday 6:30-7:30 pm",
       bookingLink: "https://example.com/book/500-hours",
       image: Carousel4,
-      teacher: "David Miller - E-RYT 500, YACEP, 20 years teaching experience"
+      teacher: "David Rodriguez"
     }
   ]
 
@@ -111,9 +111,18 @@ const OurClasses = () => {
             <div className='text-lg font-semibold mb-4'>
               SCHEDULE
             </div>
-            <div className='text-sm flex'><div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
+            <div className='text-sm flex mb-2'>
+              <div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
                 <FaCalendarAlt className="mx-[9px]" />
-              </div><div className="flex-1">{activeClassData?.schedule}</div></div>
+              </div>
+              <div className="flex-1">{activeClassData?.schedule}</div>
+            </div>
+            <div className='text-sm flex'>
+              <div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
+                <GiMeditation className="mx-[9px]" />
+              </div>
+              <div className="flex-1"><span className='font-semibold text-xs'>INSTRUCTOR</span> <br />{activeClassData?.teacher}</div>
+            </div>
             {/* <div className='text-lg font-semibold mb-4 mt-8'>
               TEACHER
             </div>
