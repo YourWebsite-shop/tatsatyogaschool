@@ -1,16 +1,18 @@
-import React from 'react'
-import Hero from '@/components/aboutUs/Hero'
-import WhoWeAre from '@/components/aboutUs/WhoWeAre'
-import WhyUs from '@/components/aboutUs/WhyUs'
+import React from "react";
+import Hero from "@/components/aboutUs/Hero";
+
+import Instructors from "@/components/aboutUs/Instructors";
+import WhoWeAre from "@/components/aboutUs/WhoWeAre";
 
 const page = () => {
   return (
     <div>
       <Hero />
-      <WhoWeAre />
-      <WhyUs />
-    </div>
-  )
-}
 
-export default page
+      <Instructors />
+      <WhoWeAre />
+    </div>
+  );
+};
+
+export default page;
