@@ -18,6 +18,7 @@ import { IoMdCall } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 import { FaInstagram } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -34,7 +35,7 @@ const Navbar = () => {
         color="white"
         position="relative"
         flexDir="row-reverse"
-        // Add animation class
+      // Add animation class
       >
         {/* Hamburger for Mobile */}
         <IconButton
@@ -63,10 +64,12 @@ const Navbar = () => {
           justifyContent={"space-around"}
         >
           <Text cursor="pointer" className="fade-animation">
-            Home
+            <Link href={'/'}>
+              Home</Link>
           </Text>
           <Text cursor="pointer" className="fade-animation">
-            About Us
+            <Link href={'/aboutus'}>
+              About Us</Link>
           </Text>
           <Text cursor="pointer" className="fade-animation">
             Yoga Retreat
@@ -100,10 +103,12 @@ const Navbar = () => {
           <DrawerBody py={10}>
             <Flex direction="column" align="center" gap={6} fontSize="lg">
               <Text cursor="pointer" onClick={onClose}>
-                Home
+                <Link href={'/'}>
+                  Home</Link>
               </Text>
               <Text cursor="pointer" onClick={onClose}>
-                About Us
+                <Link href={'/aboutus'}>
+                  About Us</Link>
               </Text>
               <Text cursor="pointer" onClick={onClose}>
                 Yoga Retreat
