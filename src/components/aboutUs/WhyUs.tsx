@@ -1,6 +1,6 @@
 import React from "react";
 import whyus1 from "@/assets/aboutsUs/why us (1).webp";
-import whyus2 from "@/assets/aboutsUs/why us (2).webp";
+import whyus2 from "@/assets/aboutsUs/Why us (2).webp";
 import whyus3 from "@/assets/aboutsUs/why us (3).webp";
 import { Button } from "@chakra-ui/react";
 import { FaArrowRightLong } from "react-icons/fa6";
