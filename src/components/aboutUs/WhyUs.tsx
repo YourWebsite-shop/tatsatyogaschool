@@ -32,25 +32,34 @@ const WhyUsData = [
 
 const WhyUs = () => {
   return (
-    <div className="bg-[#EBE6E2] px-[84px] ">
-      <div className="flex justify-between">
-        <h1 className="text-[48px] font-bold ">Why Us?</h1>
-        <Button>
+    <div className=" max-w-[1280px] mx-auto  bg-[#EBE6E2] lg:px-[16px] sm:px-[24px] px-[16px] mb-[80px]">
+      <div className="flex justify-between lg:pb-[28px] sm:pb-[20px] pb-[12px]">
+        <h1 className="lg:text-[36px] sm:text-[32px] text-[24px] font-bold ">Why Us?</h1>
+        <Button className="!bg-transparent !hover:bg-transparent !hover:shadow-none !focus:ring-0 !focus:outline-none !border-none gap-2 ">
+          <p className="lg:text-[16px] sm:text-[12px] text-[12px]">
           Read More
-          <FaArrowRightLong />{" "}
+          </p>
+          <FaArrowRightLong className="lg:text-[16px] text-[12px] sm:text-[14px]"/>
         </Button>
       </div>
-      <div className="flex flex-row gap-4">
+      <div className="flex sm:flex-row flex-col lg:gap-12 sm:gap-6 gap-4">
         {WhyUsData.map((item) => (
           <div
             key={item.id}
-            className="flex flex-row bg-[#A18E85] p-4 rounded-lg"
+            className="flex flex-row bg-[#E8DCC6] lg:p-4 sm:p-[8px] p-[10px] rounded-[10px]"
           >
             <div className="w-[60%]">
-              <h1 className="text-[16px] font-semibold">{item.heading}</h1>
-              <p className="text-[20px]">{item.description}</p>
+              <h1 className="lg:text-[16px] sm:text-[12px] text-[14px] font-semibold lg:pb-[12px] sm:pb-[8px] pb-[6px]">
+                {item.heading}
+              </h1>
+              <p className="lg:text-[12px] sm:text-[10px] text-[12px]">{item.description}</p>
             </div>
-            <Image src={item.image} alt="image" width={1000} className="w-[40%] overflow-hidden" />
+            <Image
+              src={item.image}
+              alt="image"
+              width={1000}
+              className="w-[40%] object-cover overflow-hidden rounded-[10px]"
+            />
           </div>
         ))}
       </div>

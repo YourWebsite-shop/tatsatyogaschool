@@ -2,7 +2,7 @@ import React from "react";
 
 const WhoWeAre = () => {
   return (
-    <div className="flex sm:flex-row flex-col gap-[12px] sm:gap-[48px] px-[24px] sm:px-[50px] lg:px-[84px]">
+    <div className="max-w-[1280px]  mx-auto bg-[#EBE6E2] lg:px-[16px] sm:px-[24px] px-[16px]  flex md:flex-row flex-col gap-[12px] sm:gap-[32px] lg:gap-[48px] mb-[80px] ">
       <div className=" text-gray-600 font-semibold text-[17px] sm:text-[18px] lg:text-[24px] sm:mt-[10px] whitespace-nowrap">
         <h1>
           {" "}
