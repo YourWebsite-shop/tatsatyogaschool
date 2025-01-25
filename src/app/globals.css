@@ -82,6 +82,9 @@ body::-webkit-scrollbar-thumb {
   font-family: var(--kaftan), sans-serif;
 }
 
+.samarkan-text {
+  font-family: var(--samarkan), sans-serif;
+}
 
 
 .fade-animation {

@@ -2,12 +2,16 @@ import Image from 'next/image'
 import React from 'react'
 import AboutUs1 from "@/assets/aboutsUs/aboutus1.jpg"
 import AboutUs2 from "@/assets/aboutsUs/aboutus2.jpg"
+import RightTop from "@/assets/aboutsUs/right-top.png"
+import LeftBottom from "@/assets/aboutsUs/left-bottom.png"
 
 const AboutUs: React.FC = () => {
   return (
     <>
       {/* Desktop/Large Screen View */}
-      <div className='bg-[#EAE6E2] xl:flex justify-around py-16 md:py-24 xl:py-32 hidden'>
+      <div className='bg-[#EAE6E2] xl:flex justify-around py-16 md:py-24 xl:py-32 hidden relative'>
+        <Image src={RightTop} alt="Decorative background" className='absolute top-0 right-0 opacity-50 w-96' />
+        <Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-50 w-80' />
         <div className='w-full xl:w-[25vw] px-4 md:px-8 xl:px-10 flex items-end'>
           <Image src={AboutUs1} alt='Yoga practice at Tatsat' className='rounded-tr-[50px] w-full rounded-bl-[50px]' data-aos="fade-right" data-aos-delay="300" data-aos-duration="1000" />
         </div>
@@ -15,6 +19,7 @@ const AboutUs: React.FC = () => {
           <div>
             <div className='flex flex-col xl:flex-row justify-around'>
               <div className='w-full xl:w-[50vw] p-4 md:p-8 xl:p-10'>
+                <h2 className='samarkan-text text-lg font-bold text-center'>योगः स्वास्थ्यम् aak</h2>
                 <h2 className='kaftan-text text-4xl md:text-5xl lg:text-6xl text-center' data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">ABOUT US</h2>
                 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                   <h5 className='font-semibold text-base md:text-lg mt-6 md:mt-10'>OUR SPACE</h5>
@@ -53,7 +58,9 @@ const AboutUs: React.FC = () => {
       </div>
 
       {/* Mobile/Tablet View */}
-      <div className='bg-[#EAE6E2] px-4 sm:px-8 md:px-[100px] xl:hidden pb-12 md:pb-20'>
+      <div className='bg-[#EAE6E2] px-4 sm:px-8 md:px-[100px] xl:hidden pb-12 md:pb-20 relative'>
+        <Image src={RightTop} alt="Decorative background" className='absolute top-0 right-0 opacity-50' />
+        <Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-50' />
         <h4 className='kaftan-text text-center text-2xl sm:text-3xl py-12 md:py-20' data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">ABOUT US</h4>
 
         <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">

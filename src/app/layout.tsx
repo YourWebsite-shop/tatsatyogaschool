@@ -17,6 +17,12 @@ const kaftan = localFont({
   weight: "100 200 300 400 500 600 700 800 900"
 })
 
+const samarkan = localFont({
+  src: "./fonts/samarkan.ttf",
+  variable: "--samarkan",
+  weight: "100 200 300 400 500 600 700 800 900"
+})
+
 
 export const metadata: Metadata = {
   title: "Tatsat Yoga",
@@ -31,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bric.className} ${kaftan.variable} antialiased bg-[#EAE6E1]`}
+        className={`${bric.className} ${kaftan.variable} ${samarkan.variable} antialiased bg-[#EAE6E1]`}
       >
         <Providers>
           <Navbar />
