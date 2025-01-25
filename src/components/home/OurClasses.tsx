@@ -79,7 +79,7 @@ const OurClasses = () => {
   return (
     <div className='pb-12'>
       <div className='bg-[#1A1A1A] pt-5 pb-96 rounded-t-[60px]'>
-        <div className='kaftan-text my-8 text-white text-center lg:text-5xl md:text-4xl text-3xl font-bold tracking-widest'>OUR CLASSES</div>
+        <div className='kaftan-text my-8 text-white text-center lg:text-5xl md:text-4xl text-3xl font-bold tracking-widest' data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">OUR CLASSES</div>
         <div className='flex md:flex-wrap md:justify-center gap-4 px-4 overflow-x-auto md:overflow-visible whitespace-nowrap scrollbar-hide'>
           {classes.map((yogaClass, index) => (
             <div key={index} className="relative inline-block md:block">
@@ -89,6 +89,8 @@ const OurClasses = () => {
                   ${yogaClass.name === activeClass ?
                     'text-[#F67D49]' :
                     'text-white'}`}
+
+                    data-aos="fade-up" data-aos-delay={`${index}00`} data-aos-duration="1000"
               >
                 {yogaClass.name}
               </div>
@@ -102,24 +104,24 @@ const OurClasses = () => {
         </div>
         <div className='max-w-5xl mx-auto flex flex-col lg:flex-row gap-8 px-4 lg:px-10 mt-16 text-white'>
           <div className='lg:w-[50%] w-full'>
-              <div className='text-lg font-semibold mb-4'>ABOUT</div>
-              <div className='text-sm'>{activeClassData?.description}</div>
+              <div className='text-lg font-semibold mb-4' data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">ABOUT</div>
+              <div className='text-sm' data-aos="fade-up" data-aos-delay="350" data-aos-duration="1000">{activeClassData?.description}</div>
           </div>
           <div className='lg:w-[25%] md:w-[50%] w-full'>
-            <div className='text-lg font-semibold mb-4'>SPECIFICS</div>
-            <div className='text-sm'>{activeClassData?.specifics}</div>
+            <div className='text-lg font-semibold mb-4' data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">SPECIFICS</div>
+            <div className='text-sm' data-aos="fade-up" data-aos-delay="450" data-aos-duration="1000">{activeClassData?.specifics}</div>
           </div>
           <div className='lg:w-[25%] md:w-[50%] w-full'>
-            <div className='text-lg font-semibold mb-4'>
+            <div className='text-lg font-semibold mb-4' data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               SCHEDULE
             </div>
-            <div className='text-sm flex mb-2'>
+            <div className='text-sm flex mb-2' data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
                 <FaCalendarAlt className="mx-[9px]" />
               </div>
               <div className="flex-1">{activeClassData?.schedule}</div>
             </div>
-            <div className='text-sm flex'>
+            <div className='text-sm flex' data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <div className="inline-flex items-center justify-center bg-gray-700 rounded-full h-8 mr-2">
                 <GiMeditation className="mx-[9px]" />
               </div>
@@ -163,7 +165,7 @@ const OurClasses = () => {
             >
               {classes.map((yogaClass, index) => (
                 <SwiperSlide key={index}>
-                  <Image src={yogaClass.image} alt={yogaClass.name} className="rounded-b-lg w-full h-auto" />
+                  <Image src={yogaClass.image} alt={yogaClass.name} className="rounded-b-lg w-full h-auto" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000" />
                 </SwiperSlide>
               ))}
             </Swiper>

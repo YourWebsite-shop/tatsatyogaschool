@@ -26,31 +26,31 @@ const Footer: React.FC = () => {
       <div className=" bg-black flex justify-between lg:px-[82px] lg:pb-[96px] sm:px-[40px] px-[18px]">
         {/* Section for Quick Links */}
         <div className=" hidden sm:block p-[18px] sm:p-[0px] pb-[84px] sm:pb-[0px] lg:space-y-[15px] sm:space-y-[12px] space-y-[12px]  ">
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             About Us
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] ">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] " data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Classes
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Schedule
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Instructors
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Reviews
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Prices
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             FAQ
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] lg:pt-8 sm:pt-16 pt-8 hidden sm:block">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] lg:pt-8 sm:pt-16 pt-8 hidden sm:block" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Privacy Policy
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] hidden sm:block">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] hidden sm:block" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Terms of Use
           </p>
         </div>
@@ -62,18 +62,19 @@ const Footer: React.FC = () => {
             alt="logo"
             width={1000}
             className="lg:w-[140px] sm:w-[120px] w-[140px] lg:pb-[16px] sm:pb-[10px] sm:left-0 sm:mx-auto "
+            data-aos="fade-up" data-aos-delay="200" data-aos-duration="900"
           />
 
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] pb-[6px]">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] pb-[6px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             ©2025 Tatsat Yoga School
           </p>
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] mb-[20px] sm:mb-[0px]">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] mb-[20px] sm:mb-[0px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             All rights reserved
           </p>
-          <p className="text-[#EAE6E1] lg:text-[11px] sm:text-[16px] text-[14px] sm:hidden block mb-[10px] sm:mb-[0px]">
+          <p className="text-[#EAE6E1] lg:text-[11px] sm:text-[16px] text-[14px] sm:hidden block mb-[10px] sm:mb-[0px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Privacy Policy
           </p>
-          <p className="text-[#EAE6E1] lg:text-[11px] sm:text-[16px] text-[14px] sm:hidden block">
+          <p className="text-[#EAE6E1] lg:text-[11px] sm:text-[16px] text-[14px] sm:hidden block" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             Terms of Use
           </p>
         </div>
@@ -81,14 +82,14 @@ const Footer: React.FC = () => {
         {/* Section for Contact Information */}
         <div className="right-0 lg:pr-[0px] sm:pr-[40px] px-[18px] sm:px-0 lg:w-[400px] sm:w-1/2">
           {/* Contact info introduction */}
-          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] lg:pb-[24px] sm:pb-[30px] pb-[20px] ">
+          <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] lg:pb-[24px] sm:pb-[30px] pb-[20px] " data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             We are always happy to answer all your questions. Feel free to
             contact us!
           </p>
 
           {/* Address section */}
           <div className="lg:pb-[16px] sm:pb-[20px] pb-[16px]">
-            <div className="flex text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]  ">
+            <div className="flex text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]  " data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
               <p className="aspect-square ">
                 <TiLocation className="lg:mr-2 mr-1 h-[24px] w-[28px] sm:h-[21px] sm:w-[30px] lg:h-[32px] lg:w-[32px] bg-gray-800 rounded-full p-0.5 lg:-translate-y-1 sm:mt-[3px] mt-[0px] " />
               </p>
@@ -97,7 +98,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Telephone section */}
-          <div className="flex text-[#EAE6E1] lg:pb-[16px] sm:pb-[20px] pb-[16px]">
+          <div className="flex text-[#EAE6E1] lg:pb-[16px] sm:pb-[20px] pb-[16px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             <div className="aspect-square">
               <BsTelephoneFill className="lg:mr-2 h-[24px] w-[24px] mr-1 sm:h-[21px] sm:w-[21px] lg:h-[30px] lg:w-[30px] bg-gray-800 rounded-full p-0.5 sm:mt-[2px] lg:-translate-y-1 sm:mb-[0px] mb-[2px]" />
             </div>
@@ -108,7 +109,7 @@ const Footer: React.FC = () => {
 
           {/* Email section */}
           <div className="lg:pb-[30px] sm:pb-[36px] pb-[26px]">
-            <div className="flex text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
+            <div className="flex text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
               <p className="aspect-square">
                 <IoMail className="lg:mr-2 mr-1 h-[24px] w-[24px] sm:h-[21px] sm:w-[21px] lg:h-[30px] lg:w-[30px] bg-gray-800 rounded-full p-0.5 lg:-translate-y-2 sm:mt-[3px] mb-[2px] sm:mb-[0px] " />
               </p>
@@ -117,7 +118,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Social Media Section */}
-          <div className="text-[#EAE6E1]">
+          <div className="text-[#EAE6E1]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
             <p className="text-[#EAE6E1] lg:text-[11px] sm:text-[16px] text-[14px]">
               Follow our news and updates on social media. We look forward to
               seeing you on the mat!

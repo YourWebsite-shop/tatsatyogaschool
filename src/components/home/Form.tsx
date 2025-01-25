@@ -36,6 +36,7 @@ const Form = () => {
           backdropFilter="blur(8px)"
           borderRadius="xl"
           boxShadow="xl"
+          data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
         >
           <p className="text-center text-gray-800 text-sm md:text-base font-medium mb-2">
             BOOK NOW AND GET{" "}

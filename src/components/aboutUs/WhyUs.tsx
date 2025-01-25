@@ -34,7 +34,7 @@ const WhyUs = () => {
   return (
     <div className=" max-w-[1280px] mx-auto  bg-[#EBE6E2] lg:px-[16px] sm:px-[24px] px-[16px] mb-[80px]">
       <div className="flex justify-between lg:pb-[28px] sm:pb-[20px] pb-[12px]">
-        <h1 className="lg:text-[36px] sm:text-[32px] text-[24px] font-bold ">Why Us?</h1>
+        <h1 className="lg:text-[36px] sm:text-[32px] text-[24px] font-bold " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Why Us?</h1>
         <Button className="!bg-transparent !hover:bg-transparent !hover:shadow-none !focus:ring-0 !focus:outline-none !border-none gap-2 ">
           <p className="lg:text-[16px] sm:text-[12px] text-[12px]">
           Read More
@@ -47,6 +47,7 @@ const WhyUs = () => {
           <div
             key={item.id}
             className="flex flex-row bg-[#E8DCC6] lg:p-4 sm:p-[8px] p-[10px] rounded-[10px] gap-2"
+            data-aos="fade-up" data-aos-delay={`${item.id}00`} data-aos-duration="1000"
           >
             <div className="w-[60%]">
               <h1 className="lg:text-[16px] sm:text-[12px] text-[14px] font-semibold lg:pb-[12px] sm:pb-[8px] pb-[6px]">

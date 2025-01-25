@@ -128,7 +128,7 @@ const FAQ: React.FC = () => {
 
       <Accordion allowMultiple={true} mx={4}>
         {FAQData.slice(0, visibleFAQs).map((faq, i) => (
-          <AccordionItem key={i} borderColor={'orange'} py={2} >
+          <AccordionItem key={i} borderColor={'orange'} py={2} data-aos="fade-up" data-aos-delay={`${i}00`} data-aos-duration="1000" >
           <h2>
           <AccordionButton>
             <Text as='span' flex='1' textAlign='left' fontWeight={500} fontSize={'lg'} >
