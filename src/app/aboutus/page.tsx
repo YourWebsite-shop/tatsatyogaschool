@@ -1,19 +1,19 @@
 import React from 'react'
-import Hero from '@/components/aboutUs/Hero'
+// import Hero from '@/components/aboutUs/Hero'
 // import Experience from '@/components/aboutUs/Experience'
 // import Teachers from '@/components/aboutUs/Teachers'
-import Instructors from '@/components/aboutUs/Instructors'
-import WhoWeAre from '@/components/aboutUs/WhoWeAre'
+// import Instructors from '@/components/aboutUs/Instructors'
+// import WhoWeAre from '@/components/aboutUs/WhoWeAre'
 
 
 const page = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
       {/* <Experience /> */}
       {/* <Teachers /> */}
-      <Instructors />
-      <WhoWeAre />
+      {/* <Instructors /> */}
+      {/* <WhoWeAre /> */}
     </div>
   )
 }
