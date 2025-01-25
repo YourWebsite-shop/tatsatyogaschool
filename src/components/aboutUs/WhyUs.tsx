@@ -46,7 +46,7 @@ const WhyUs = () => {
         {WhyUsData.map((item) => (
           <div
             key={item.id}
-            className="flex flex-row bg-[#E8DCC6] lg:p-4 sm:p-[8px] p-[10px] rounded-[10px]"
+            className="flex flex-row bg-[#E8DCC6] lg:p-4 sm:p-[8px] p-[10px] rounded-[10px] gap-2"
           >
             <div className="w-[60%]">
               <h1 className="lg:text-[16px] sm:text-[12px] text-[14px] font-semibold lg:pb-[12px] sm:pb-[8px] pb-[6px]">
