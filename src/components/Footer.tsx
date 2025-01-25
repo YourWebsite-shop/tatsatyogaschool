@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         <div className="bg-black w-1/2 h-[80px] rounded-tr-[64px] "></div>
         <div className="bg-black w-1/2 h-[80px] rounded-tl-[64px]"></div>
       </div>
-      <div className=" bg-black flex justify-between lg:px-[82px] lg:pb-[96px] sm:px-[40px] px-[18px]">
+      <div className=" bg-black flex justify-between lg:px-[82px] lg:pb-[20px] sm:px-[40px] px-[18px]">
         {/* Section for Quick Links */}
         <div className=" hidden sm:block p-[18px] sm:p-[0px] pb-[84px] sm:pb-[0px] lg:space-y-[15px] sm:space-y-[12px] space-y-[12px]  ">
           <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
