@@ -19,7 +19,7 @@ const AboutUs: React.FC = () => {
           <div>
             <div className='flex flex-col xl:flex-row justify-around'>
               <div className='w-full xl:w-[50vw] p-4 md:p-8 xl:p-10'>
-                <h2 className='samarkan-text text-lg font-bold text-center'>Sattvam Yogah</h2>
+                <h2 className='samarkan-text text-lg font-bold text-center'>योगः स्वास्थ्यम् aak</h2>
                 <h2 className='kaftan-text text-4xl md:text-5xl lg:text-6xl text-center' data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">ABOUT US</h2>
                 <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
                   <h5 className='font-semibold text-base md:text-lg mt-6 md:mt-10'>OUR SPACE</h5>
