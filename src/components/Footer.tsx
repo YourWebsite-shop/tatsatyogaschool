@@ -288,27 +288,93 @@ const Footer: React.FC = () => {
             </div>
             {/* Section for Quick Links */}
             <div className=" block sm:hidden space-y-[12px] translate-x-9 translate-y-14">
-              <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
-                About Us
-              </p>
-              <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] ">
-                Classes
-              </p>
-              <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
-                Schedule
-              </p>
-              <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
-                Instructors
-              </p>
-              <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
-                Reviews
-              </p>
-              <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
-                Prices
-              </p>
-              <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]">
-                FAQ
-              </p>
+              <div>
+                <Link href="/aboutus">
+                  <p
+                    className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] cursor-pointer"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="900"
+                  >
+                    About Us
+                  </p>
+                </Link>
+              </div>
+              <div>
+                <Link href="/#ourClasses">
+                  <p
+                    className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] cursor-pointer"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="900"
+                  >
+                    Classes
+                  </p>
+                </Link>
+              </div>
+
+              <div>
+                <Link href="/#benefits">
+                  <p
+                    className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="900"
+                  >
+                    Benefits
+                  </p>
+                </Link>
+              </div>
+              <div>
+                <Link href="/aboutus#instructors">
+                  <p
+                    className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="900"
+                  >
+                    Instructors
+                  </p>
+                </Link>
+              </div>
+              <div>
+                <Link href="#testimonials">
+                  <p
+                    className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="900"
+                  >
+                    Reviews
+                  </p>
+                </Link>
+              </div>
+
+              <div>
+                <Link href="/#contactus">
+                  <p
+                    className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="900"
+                  >
+                    Contact Us
+                  </p>
+                </Link>
+              </div>
+              <div>
+                <Link href="/#faq">
+                  <p
+                    className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px]"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                    data-aos-duration="900"
+                  >
+                    FAQ
+                  </p>
+                </Link>
+              </div>
+
               <p className="text-[#EAE6E1] lg:text-[14px] sm:text-[16px] text-[14px] lg:pt-8 sm:pt-16 pt-8 hidden sm:block">
                 Privacy Policy
               </p>
