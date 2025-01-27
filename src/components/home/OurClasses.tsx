@@ -15,6 +15,7 @@ import Carousel3 from "@/assets/home/carousel3.jpg";
 import Carousel4 from "@/assets/home/carousel4.jpg";
 import Top from "@/assets/Top.png";
 import bottomBoder from "@/assets/home/ourClassesBorder.webp";
+import divorna from "@/assets/home/divider-ornament.png"
 
 const OurClasses = () => {
   const [activeClass, setActiveClass] = useState("100 Hours");
@@ -89,7 +90,12 @@ const OurClasses = () => {
 
   return (
     <div className="pb-12">
-      <div className="bg-[#1A1A1A] pt-5 pb-96 rounded-t-[60px]">
+      <div className="bg-[#1A1A1A] relative pt-5 pb-96 rounded-t-[60px]">
+      <Image
+          src={bottomBoder}
+          alt="Decorative background"
+          className="absolute   bottom-0 opacity-50 "
+        />
         <div
           className="kaftan-text my-8 text-white text-center lg:text-5xl md:text-4xl text-3xl font-bold tracking-widest"
           data-aos="fade-up"
@@ -201,7 +207,7 @@ const OurClasses = () => {
 
       <div className="relative -mt-80">
         <div className="flex max-w-6xl mx-auto mt-8">
-          <button ref={prevButtonRef} className="hidden md:block">
+          {/* <button ref={prevButtonRef} className="hidden md:block">
             <Image
               src={Arrow}
               alt="Previous"
@@ -209,19 +215,24 @@ const OurClasses = () => {
               height={90}
               className="transform scale-x-[-1]"
             />
-          </button>
+          </button> */}
 
           <div className="px-2 md:px-8 w-full max-w-5xl relative ">
             <Image
               src={Top}
               alt=""
-              className="absolute z-10 w-28 left-1/2 -translate-x-1/2"
+              className="absolute z-10 w-28 left-1/2 -translate-x-1/2 lg:-translate-x-0"
+            />
+            <Image
+              src={divorna}
+              alt=""
+              className="absolute hidden lg:block max-w-5xl rotate-180 top-full w-[98%] lg:w-[900px] ml-10 z-10 left-1/2 -translate-x-1/2 lg:-translate-x-1/2"
             />
             <Swiper
               onSwiper={(swiper) => {
                 swiperRef.current = swiper;
               }}
-              className="mySwiper max-w-4xl rounded-b-[48px] overflow-hidden"
+              className="mySwiper max-w-4xl rounded-b-[48px] overflow-hidden lg:translate-x-10 relative"
               modules={[Navigation]}
               navigation={{
                 prevEl: prevButtonRef.current,
@@ -259,7 +270,7 @@ const OurClasses = () => {
             </Swiper>
           </div>
           <button ref={nextButtonRef} className="hidden md:block">
-            <Image src={Arrow} alt="Next" width={90} height={90} />
+            {/* <Image src={Arrow} alt="Next" width={90} height={90} /> */}
           </button>
         </div>
         <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-10">
@@ -273,11 +284,7 @@ const OurClasses = () => {
             </button>
           </a>
         </div>
-        <Image
-          src={bottomBoder}
-          alt="Decorative background"
-          className="absolute lg:-translate-y-40 sm:-translate-y-[76px] translate-y-16 bottom-0 opacity-50 "
-        />
+    
       </div>
     </div>
   );

@@ -148,9 +148,9 @@ const Testimonials = () => {
         </div>
   
         {/* Swiper Section */}
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid sm:grid-cols-1 relative md:grid-cols-2 gap-8">
           
-          <Image src={graphic} width={1000} alt="" className="absolute w-[300px] md:w-[300px] sm:w-[270px] left-[51%] -translate-y-[120px] lg:translate-y-14 md:left-[49.5%] md:-translate-y-6 sm:-translate-y-3 sm:left-[50.5%] lg:w-[200px]  rotate-180 lg:left-[49.5%] -translate-x-1/2 "  />
+          <Image src={graphic} width={1000} alt="" className="absolute w-[300px] md:w-[300px] sm:w-[270px] left-[51%] -translate-y-[120px] lg:-translate-y-14 md:left-[49.5%] md:-translate-y-6 sm:-translate-y-3 sm:left-[50.5%] lg:w-[250px]   lg:left-[49.5%] -translate-x-1/2 "  />
           <Swiper
             className="circular-slider"
             spaceBetween={10}
