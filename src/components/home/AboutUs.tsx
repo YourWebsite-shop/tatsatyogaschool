@@ -13,7 +13,7 @@ const AboutUs: React.FC = () => {
         <Image
           src={RightTop}
           alt="Decorative background"
-          className="absolute top-0 right-0 opacity-30 lg:w-96 w-52"
+          className="absolute top-0 right-0 opacity-30 w-52 lg:w-96"
         />
         <Image
           src={LeftBottom}
@@ -133,12 +133,12 @@ const AboutUs: React.FC = () => {
         <Image
           src={RightTop}
           alt="Decorative background"
-          className="absolute top-0 right-0 opacity-50"
+          className="absolute top-0 right-0 opacity-50 w-24 sm:w-32 md:w-44"
         />
         <Image
           src={LeftBottom}
           alt="Decorative background"
-          className="absolute bottom-0 left-0 opacity-50"
+          className="absolute bottom-0 left-0 opacity-50 w-24 sm:w-32 md:w-44"
         />
         <h4
           className="kaftan-text text-center text-2xl sm:text-3xl py-12 md:py-20"

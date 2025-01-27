@@ -117,7 +117,7 @@ const OurClasses = () => {
             OUR CLASSES
           </div>
 
-          <div className="flex md:flex-wrap md:justify-center gap-4 px-4 overflow-x-auto md:overflow-visible whitespace-nowrap scrollbar-hide">
+          <div className="flex md:flex-wrap md:justify-center gap-4 px-4 overflow-x-auto overflow-y-hidden md:overflow-visible whitespace-nowrap scrollbar-hide">
             {classes.map((yogaClass, index) => (
               <div key={index} className="relative inline-block md:block">
                 <div
