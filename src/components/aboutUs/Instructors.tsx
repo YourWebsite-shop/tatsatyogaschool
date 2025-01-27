@@ -50,6 +50,7 @@ const instructors = [
 
 const Instructors: React.FC = () => {
   return (
+    <section id='instructors' >
     <Box pb={20} px={4}>
       <Heading textAlign="center" fontSize="4xl" mb={12} data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         <p className='kaftan-text font-semibold' >
@@ -102,6 +103,7 @@ const Instructors: React.FC = () => {
         ))}
       </Grid>
     </Box>
+    </section>
   );
 };
 

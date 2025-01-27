@@ -124,6 +124,7 @@ const FAQ: React.FC = () => {
   };
 
   return (
+    <section id="faq">
     <div className='bg-[#EAE6E1] pb-44 relative '>
       <div className="absolute top-0 w-full flex">
         <Image src={border} alt="Decorative background" className='opacity-30 w-1/3 rotate-180' />
@@ -167,6 +168,7 @@ const FAQ: React.FC = () => {
       )}
     </div>
     </div>
+    </section>
   )
 }
 
