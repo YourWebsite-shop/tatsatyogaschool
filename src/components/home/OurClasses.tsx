@@ -8,7 +8,6 @@ import "swiper/css/navigation";
 import { FaCalendarAlt } from "react-icons/fa";
 import { GiMeditation } from "react-icons/gi";
 import Image from "next/image";
-import Arrow from "@/assets/arrow.png";
 import Carousel1 from "@/assets/home/carousel1.jpg";
 import Carousel2 from "@/assets/home/carousel2.jpg";
 import Carousel3 from "@/assets/home/carousel3.jpg";
