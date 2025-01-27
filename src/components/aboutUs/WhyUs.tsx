@@ -2,8 +2,7 @@ import React from "react";
 import whyus1 from "@/assets/aboutsUs/why us (1).webp";
 import whyus2 from "@/assets/aboutsUs/Why us (2).webp";
 import whyus3 from "@/assets/aboutsUs/why us (3).webp";
-import { Button } from "@chakra-ui/react";
-import { FaArrowRightLong } from "react-icons/fa6";
+
 import Image from "next/image";
 
 const WhyUsData = [
@@ -32,15 +31,15 @@ const WhyUsData = [
 
 const WhyUs = () => {
   return (
-    <div className=" max-w-[1280px] mx-auto  bg-[#EBE6E2] lg:px-[16px] sm:px-[24px] px-[16px] mb-[80px]">
+    <div className=" max-w-[1280px] mx-auto  bg-[#EBE6E2] lg:px-[16px] sm:px-[24px] px-[16px] mb-[80px] ">
       <div className="flex justify-between lg:pb-[28px] sm:pb-[20px] pb-[12px]">
         <h1 className="lg:text-[36px] sm:text-[32px] text-[24px] font-bold " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Why Us?</h1>
-        <Button className="!bg-transparent !hover:bg-transparent !hover:shadow-none !focus:ring-0 !focus:outline-none !border-none gap-2 ">
+        {/* <Button className="!bg-transparent !hover:bg-transparent !hover:shadow-none !focus:ring-0 !focus:outline-none !border-none gap-2 ">
           <p className="lg:text-[16px] sm:text-[12px] text-[12px]">
           Read More
           </p>
           <FaArrowRightLong className="lg:text-[16px] text-[12px] sm:text-[14px]"/>
-        </Button>
+        </Button> */}
       </div>
       <div className="flex sm:flex-row flex-col lg:gap-12 sm:gap-6 gap-4">
         {WhyUsData.map((item) => (

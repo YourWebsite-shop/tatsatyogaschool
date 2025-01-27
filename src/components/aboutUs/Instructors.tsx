@@ -25,32 +25,32 @@ const instructors = [
     description: 'Exercitationem quo veritatis doloremque perferendis iste eaque quae.',
     image: mark1,
   },
-  {
-    name: 'Arjun Patel',
-    title: 'Power Yoga Instructor',
-    experience: '7 years of experience',
-    description: 'Optio deleniti ratione quia error voluptas velit aspernatur.',
-    image: mark1,
-  },
-  {
-    name: 'Naina Kapoor',
-    title: 'Restorative Yoga Instructor',
-    experience: '3 years of experience',
-    description: 'Tempore fugit ipsa repellendus quos reiciendis officia, assumenda.',
-    image: mark1,
-  },
-  {
-    name: 'Rohan Gupta',
-    title: 'Prenatal Yoga Instructor',
-    experience: '8 years of experience',
-    description: 'Voluptatibus quibusdam pariatur deserunt fugiat cupiditate aspernatur.',
-    image: mark1,
-  },
+  // {
+  //   name: 'Arjun Patel',
+  //   title: 'Power Yoga Instructor',
+  //   experience: '7 years of experience',
+  //   description: 'Optio deleniti ratione quia error voluptas velit aspernatur.',
+  //   image: mark1,
+  // },
+  // {
+  //   name: 'Naina Kapoor',
+  //   title: 'Restorative Yoga Instructor',
+  //   experience: '3 years of experience',
+  //   description: 'Tempore fugit ipsa repellendus quos reiciendis officia, assumenda.',
+  //   image: mark1,
+  // },
+  // {
+  //   name: 'Rohan Gupta',
+  //   title: 'Prenatal Yoga Instructor',
+  //   experience: '8 years of experience',
+  //   description: 'Voluptatibus quibusdam pariatur deserunt fugiat cupiditate aspernatur.',
+  //   image: mark1,
+  // },
 ];
 
 const Instructors: React.FC = () => {
   return (
-    <Box py={20} px={4}>
+    <Box pb={20} px={4}>
       <Heading textAlign="center" fontSize="4xl" mb={12} data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         <p className='kaftan-text font-semibold' >
         MEET OUR INSTRUCTORS

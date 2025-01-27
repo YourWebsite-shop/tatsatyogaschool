@@ -11,9 +11,9 @@ const page = () => {
     <div>
       <Hero />
 
-      <Instructors />
       <WhoWeAre />
       <WhyUs />
+      <Instructors />
       <Testimonials />
     </div>
   );

@@ -74,6 +74,7 @@ const gridData = [
 const Benefits = () => {
   return (
     <div className="bg-[#EAE6E1] lg:px-[80px] sm:px:[50px] px-[20px] py-[100px]">
+      <h2 className='samarkan-text text-lg font-bold text-center'>sYogah Chitta Vritti Nirodhah</h2>
       <h1 className="kaftan-text text-center lg:text-[53px] sm:text-[36px] text-[24px] font-medium text-[#1A1A1A] lg:pb-[72px] sm:pb-[56px] pb-[32px] " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         BENEFITS OF YOGA PRACTICE
       </h1>

@@ -9,6 +9,9 @@ import { Autoplay, Navigation } from "swiper/modules";
 import mark1 from "@/assets/marques/mark1.jpg"
 import Image, { StaticImageData } from "next/image";
 // import circle from "@/assets/home/Circles.png"
+import graphic from '@/assets/home/TestimonialsGraphic.png'
+import RightTop from "@/assets/aboutsUs/right-top.png"
+import LeftBottom from "@/assets/aboutsUs/left-bottom.png"
 
 // TestimonialCard Component
 const TestimonialCard = ({
@@ -119,14 +122,20 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      className="bg-[#EAE6E1] overflow-hidden mt-[20px] sm:mt-[100px] lg:mt-[120px] pb-[40px] sm:pb-[50px] lg:pb-[60px]"
+      className="bg-[#EAE6E1] overflow-hidden pt-[20px] sm:pt-[100px] lg:pt-[120px] pb-[40px] sm:pb-[50px] lg:pb-[60px] relative"
     >
-      <div className="mx-auto px-4 sm:px-6 lg:px-8">
+      <Image src={RightTop} alt="Decorative background" className='absolute top-0 right-0 opacity-50 w-96 ' />
+      <Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-50 w-80' />
+      <div className="mx-auto px-4 sm:px-6 lg:px-8 ">
+        
+        
         {/* Header Section */}
         <div
           className="text-center mb-16 animate__animated animate__fadeIn"
           id="el-d9xysvqk"
+          
         >
+           <h2 className='samarkan-text text-lg font-bold text-center'>Karmanyeva Adhikaraste</h2>
           <h2
             className="lg:text-[36px] sm:text-[28px] text-[24px] text-Black lg:mb-4 sm:mb-2 mb-1 kaftan-text lg:text-5xl pb-20 font-normal"
             data-aos="fade-up"
@@ -141,7 +150,7 @@ const Testimonials = () => {
         {/* Swiper Section */}
         <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8">
           
-          {/* <Image src={circle} width={1000} alt="" className="absolute w-[300px] left-[51%] -translate-y-[120px] lg:-translate-y-0 lg:w-[200px]  rotate-180 lg:left-[49.5%] -translate-x-1/2 "  /> */}
+          <Image src={graphic} width={1000} alt="" className="absolute w-[300px] md:w-[300px] sm:w-[270px] left-[51%] -translate-y-[120px] lg:translate-y-14 md:left-[49.5%] md:-translate-y-6 sm:-translate-y-3 sm:left-[50.5%] lg:w-[200px]  rotate-180 lg:left-[49.5%] -translate-x-1/2 "  />
           <Swiper
             className="circular-slider"
             spaceBetween={10}
