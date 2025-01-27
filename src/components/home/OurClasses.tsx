@@ -13,7 +13,7 @@ import Carousel2 from "@/assets/home/carousel2.jpg";
 import Carousel3 from "@/assets/home/carousel3.jpg";
 import Carousel4 from "@/assets/home/carousel4.jpg";
 import Top from "@/assets/Top.png";
-import bottomBoder from "@/assets/home/ourClassesBorder.webp";
+import bottomBorder from "@/assets/home/ourClassesBorder.webp";
 import divorna from "@/assets/home/divider-ornament.png"
 
 const OurClasses = () => {
@@ -91,9 +91,9 @@ const OurClasses = () => {
     <div className="pb-12">
       <div className="bg-[#1A1A1A] relative pt-5 pb-96 rounded-t-[60px]">
       <Image
-          src={bottomBoder}
+          src={bottomBorder}
           alt="Decorative background"
-          className="absolute   bottom-0 opacity-50 "
+          className="absolute bottom-0 opacity-50 "
         />
         <div
           className="kaftan-text my-8 text-white text-center lg:text-5xl md:text-4xl text-3xl font-bold tracking-widest"

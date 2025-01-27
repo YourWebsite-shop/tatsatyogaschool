@@ -124,8 +124,8 @@ const Testimonials = () => {
       id="testimonials"
       className="bg-[#EAE6E1] overflow-hidden pt-[20px] sm:pt-[100px] lg:pt-[120px] pb-[40px] sm:pb-[50px] lg:pb-[60px] relative"
     >
-      <Image src={RightTop} alt="Decorative background" className='absolute top-0 right-0 opacity-50 w-96 ' />
-      <Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-50 w-80' />
+      <Image src={RightTop} alt="Decorative background" className='absolute top-0 right-0 opacity-30 w-96 ' />
+      <Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-30 w-80' />
       <div className="mx-auto px-4 sm:px-6 lg:px-8 ">
         
         
@@ -150,7 +150,7 @@ const Testimonials = () => {
         {/* Swiper Section */}
         <div className="grid sm:grid-cols-1 relative md:grid-cols-2 gap-8">
           
-          <Image src={graphic} width={1000} alt="" className="absolute w-[300px] md:w-[300px] sm:w-[270px] left-[51%] -translate-y-[120px] lg:-translate-y-14 md:left-[49.5%] md:-translate-y-6 sm:-translate-y-3 sm:left-[50.5%] lg:w-[250px]   lg:left-[49.5%] -translate-x-1/2 "  />
+          <Image src={graphic} width={1000} alt="" className="opacity-60 absolute w-[300px] md:w-[300px] sm:w-[270px] left-[51%] -translate-y-[120px] lg:-translate-y-14 md:left-[49.5%] md:-translate-y-6 sm:-translate-y-3 sm:left-[50.5%] lg:w-[250px]   lg:left-[49.5%] -translate-x-1/2 "  />
           <Swiper
             className="circular-slider"
             spaceBetween={10}
