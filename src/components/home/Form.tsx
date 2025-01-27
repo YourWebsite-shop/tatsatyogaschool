@@ -32,17 +32,17 @@ const Form = () => {
           p={{ base: "6", md: "6", lg: "8" }}
           width={{ base: "90%", md: "70%", lg: "50%" }}
           maxW="500px"
-          bg="rgba(255, 255, 255, 0.7)"
-          backdropFilter="blur(8px)"
+          
+          backdropFilter="blur(10px)"
           borderRadius="xl"
           boxShadow="xl"
           data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000"
         >
-          <p className="text-center text-gray-800 text-sm md:text-base font-medium mb-2">
+          <p className="text-center text-white text-sm md:text-base font-medium mb-2">
             BOOK NOW AND GET{" "}
             <span className="text-[#F57D49] font-bold">FREE TRIAL CLASS</span>
           </p>
-          <p className="text-center text-gray-700 text-xs md:text-sm mb-6">
+          <p className="text-center text-white text-xs md:text-sm mb-6">
             To book a class, fill out the form and our manager will contact you.
           </p>
 
@@ -134,7 +134,7 @@ const Form = () => {
                 }
               }}
             >
-              <span className="text-xs md:text-sm text-gray-700">
+              <span className="text-xs md:text-sm text-white">
                 I agree to the{" "}
                 <span className="text-[#F57D49] cursor-pointer hover:underline">
                   Terms & Privacy

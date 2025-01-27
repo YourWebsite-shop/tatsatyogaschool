@@ -14,7 +14,7 @@ import Carousel3 from "@/assets/home/carousel3.jpg";
 import Carousel4 from "@/assets/home/carousel4.jpg";
 import Top from "@/assets/Top.png";
 import bottomBorder from "@/assets/home/ourClassesBorder.webp";
-import divorna from "@/assets/home/divider-ornament.png"
+import divorna from "@/assets/home/divider-ornament.png";
 
 const OurClasses = () => {
   const [activeClass, setActiveClass] = useState("100 Hours");
@@ -90,11 +90,23 @@ const OurClasses = () => {
   return (
     <div className="pb-12">
       <div className="bg-[#1A1A1A] relative pt-5 pb-96 rounded-t-[60px]">
-      <Image
+        <div className="flex flex-row bottom-0 absolute" >
+        <Image
           src={bottomBorder}
           alt="Decorative background"
-          className="absolute bottom-0 opacity-50 "
+          className=" opacity-30 w-1/3 "
         />
+        <Image
+          src={bottomBorder}
+          alt="Decorative background"
+          className=" opacity-30 w-1/3 "
+        />
+        <Image
+          src={bottomBorder}
+          alt="Decorative background"
+          className=" opacity-30 w-1/3 "
+        />
+        </div>
         <div
           className="kaftan-text my-8 text-white text-center lg:text-5xl md:text-4xl text-3xl font-bold tracking-widest"
           data-aos="fade-up"
@@ -220,12 +232,12 @@ const OurClasses = () => {
             <Image
               src={Top}
               alt=""
-              className="absolute z-10 w-28 left-1/2 -translate-x-1/2 lg:-translate-x-0"
+              className="absolute z-10 w-28 left-1/2 -translate-x-1/2 lg:-translate-x-2 mr-10 "
             />
             <Image
               src={divorna}
               alt=""
-              className="absolute hidden lg:block max-w-5xl rotate-180 top-full w-[98%] lg:w-[900px] ml-10 z-10 left-1/2 -translate-x-1/2 lg:-translate-x-1/2"
+              className="absolute hidden lg:block max-w-5xl rotate-180 top-full w-[98%] lg:w-[700px] ml-10 z-10 left-1/2 -translate-x-1/2 lg:-translate-x-1/2  opacity-70 "
             />
             <Swiper
               onSwiper={(swiper) => {
@@ -272,18 +284,17 @@ const OurClasses = () => {
             {/* <Image src={Arrow} alt="Next" width={90} height={90} /> */}
           </button>
         </div>
-        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-10">
+        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2 z-10 ">
           <a
             href={activeClassData?.bookingLink}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="bg-[#F67D49] text-white rounded-full px-6 py-2 hover:bg-[#E67825] transition-colors">
+            <button className="bg-[#F67D49] text-white rounded-full px-6 py-2 hover:bg-[#E67825] transition-colors lg:mr-10 ">
               Book a Class
             </button>
           </a>
         </div>
-    
       </div>
     </div>
   );

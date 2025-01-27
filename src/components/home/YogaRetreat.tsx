@@ -4,7 +4,7 @@ import yogaRetreat from "@/assets/home/YogaRetreatDark.webp";
 
 const YogaRetreat = () => {
   return (
-    <div className="bg-[#EAE6E1] h-[80vh]  py-16 relative overflow-hidden lg:rounded-t-[64px] mt-[100px]">
+    <div className="bg-[#EAE6E1] h-[80vh]  py-16 relative overflow-hidden lg:rounded-t-[64px] mt-[180px]">
       
       <Image
         src={yogaRetreat}
