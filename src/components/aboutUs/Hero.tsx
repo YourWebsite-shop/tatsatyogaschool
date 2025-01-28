@@ -1,6 +1,6 @@
 import React from "react";
-import rightBorder from "@/assets/aboutsUs/HeroRight.webp";
-import Image from "next/image";
+
+
 
 const Hero: React.FC = () => {
   return (

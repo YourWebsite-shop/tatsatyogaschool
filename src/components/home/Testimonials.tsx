@@ -10,7 +10,6 @@ import mark1 from "@/assets/marques/mark1.jpg"
 import Image, { StaticImageData } from "next/image";
 // import circle from "@/assets/home/Circles.png"
 import graphic from '@/assets/home/TestimonialsGraphic.png'
-import RightTop from "@/assets/aboutsUs/right-top.png"
 import LeftBottom from "@/assets/aboutsUs/left-bottom.png"
 import { useEffect, useState } from "react";
 
