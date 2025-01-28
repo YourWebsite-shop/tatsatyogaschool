@@ -135,8 +135,8 @@ const Testimonials = () => {
       id="testimonials"
       className="bg-[#EAE6E1] overflow-hidden pt-[20px] sm:pt-[100px] lg:pt-[120px] pb-[40px] sm:pb-[50px] lg:pb-[60px] relative"
     >
-      <Image src={LeftBottom} alt="Decorative background" className='absolute top-0 right-0 rotate-180 opacity-50 w-44 lg:w-60 ' />
-      <Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-50 w-44 lg:w-60' />
+      <Image src={LeftBottom} alt="Decorative background" className='absolute top-0 right-0 rotate-180 opacity-50 w-32 translate-y-10 lg:translate-y-0 lg:w-60 ' />
+      <Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-50 w-32 lg:w-60' />
       <div className="mx-auto px-4 sm:px-6 lg:px-8 ">
         
         
