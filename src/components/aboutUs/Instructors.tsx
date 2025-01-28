@@ -50,7 +50,7 @@ const instructors = [
 
 const Instructors: React.FC = () => {
   return (
-    <Box pb={20} px={4}>
+    <Box py={20} px={4}>
       <Heading textAlign="center" fontSize="4xl" mb={12} data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         <p className='kaftan-text font-semibold' >
         MEET OUR INSTRUCTORS

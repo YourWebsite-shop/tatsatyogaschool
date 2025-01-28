@@ -5,11 +5,11 @@ import Image from "next/image";
 const Hero: React.FC = () => {
   return (
     <div className="bg-[#F67D49] py-[48px] sm:py-[82px] lg:py-[104px] relative ">
-      <Image
+      {/* <Image
         src={rightBorder}
         alt="Decorative background"
         className="absolute right-0 top-0 h-full w-auto opacity-50"
-      />
+      /> */}
       <div className="text-left flex flex-col justify-center items-start max-w-[1280px]  mx-auto lg:px-[16px] sm:px-[24px] px-[16px] ">
         <h1 className="text-white lg:text-[80px] lg:leading-[80px] sm:text-[56px] text-[28px] font-semibold lg:pb-[24px] sm:pb-[16px] pb-[10px] " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
           We <span className="text-gray-700 opacity-70 ">Transform</span> Your

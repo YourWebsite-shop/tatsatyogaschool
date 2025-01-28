@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const WhoWeAre = () => {
   return (
-    <div className="relative" >
+    <div className="relative  lg:pt-20" >
 
-<Image src={RightTop} alt="Decorative background" className='absolute top-0 right-0 opacity-50 w-96' />
-<Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-50 w-80' />
+<Image src={RightTop} alt="Decorative background" className='absolute top-0 right-0 opacity-50 w-44 lg:w-96' />
+<Image src={LeftBottom} alt="Decorative background" className='absolute bottom-0 left-0 opacity-50 w-44 lg:w-80' />
     <div className="max-w-[1280px] mx-auto bg-[#EBE6E2] lg:px-[16px] sm:px-[24px] px-[16px]  flex md:flex-row flex-col gap-[12px] sm:gap-[32px] lg:gap-[48px] mb-[80px] lg:py-10 pt-[80px]">
       
       <div className=" text-gray-600 font-semibold text-[17px] sm:text-[18px] lg:text-[24px] sm:mt-[10px] whitespace-nowrap">
