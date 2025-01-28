@@ -124,8 +124,14 @@ const FAQ: React.FC = () => {
   };
 
   return (
+    <section id="faq">
     <div className='bg-[#EAE6E1] pb-44 relative '>
-      <Image src={border} alt="Decorative background" className='absolute top-0 opacity-50  w-full rotate-180' />
+      <div className="absolute top-0 w-full flex">
+        <Image src={border} alt="Decorative background" className='opacity-30 w-1/3 rotate-180' />
+        <Image src={border} alt="Decorative background" className='opacity-30 w-1/3 rotate-180' />
+        <Image src={border} alt="Decorative background" className='opacity-30 w-1/3 rotate-180' />
+        {/* <Image src={border} alt="Decorative background" className='opacity-50 w-1/4 rotate-180' /> */}
+      </div>
       <div className='max-w-[1280px] mx-auto'>
       <h3 className=' text-4xl py-20 leading-[45px] max-w-[260px] mx-auto lg:max-w-none lg:text-6xl text-center kaftan-text lg:py-32'  data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">FREQUENTLY ASKED QUESTIONS</h3>
 
@@ -162,6 +168,7 @@ const FAQ: React.FC = () => {
       )}
     </div>
     </div>
+    </section>
   )
 }
 

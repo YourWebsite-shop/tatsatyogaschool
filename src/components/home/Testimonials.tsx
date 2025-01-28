@@ -12,6 +12,7 @@ import Image, { StaticImageData } from "next/image";
 import graphic from '@/assets/home/TestimonialsGraphic.png'
 import RightTop from "@/assets/aboutsUs/right-top.png"
 import LeftBottom from "@/assets/aboutsUs/left-bottom.png"
+import { useEffect, useState } from "react";
 
 // TestimonialCard Component
 const TestimonialCard = ({
@@ -26,14 +27,24 @@ const TestimonialCard = ({
   return (
     <div className="bg-transparent flex flex-col items-center"  data-aos="fade-up" data-aos-delay="20" data-aos-duration="1000">
       <Image src={img} alt="" width={1000} className=" w-44 lg:w-20 rounded-full" />
-      <p className="font-[500]">{author}</p>
-      <p className="text-xs max-w-[250px]">{quote}</p>
+      <p className="font-[500] pt-2 ">{author}</p>
+      <p className="text-xs font-[500] max-w-[250px]">{quote}</p>
     </div>
   );
 };
 
 const Testimonials = () => {
+  const [padding, setPadding] = useState("0px 0px 200px 0px");
+  useEffect(() => {
+    const updatePadding = () => {
+      setPadding(window.innerWidth < 768 ? "0px 0px 80px 0px" : "0px 0px 200px 0px");
+    };
 
+    updatePadding(); // Initial check
+    window.addEventListener("resize", updatePadding); // Adjust on resize
+
+    return () => window.removeEventListener("resize", updatePadding); // Cleanup
+  }, []);
 
   const testimonials = [
     {
@@ -150,7 +161,7 @@ const Testimonials = () => {
         {/* Swiper Section */}
         <div className="grid sm:grid-cols-1 relative md:grid-cols-2 gap-8">
           
-          <Image src={graphic} width={1000} alt="" className="absolute w-[300px] md:w-[300px] sm:w-[270px] left-[51%] -translate-y-[120px] lg:-translate-y-14 md:left-[49.5%] md:-translate-y-6 sm:-translate-y-3 sm:left-[50.5%] lg:w-[250px]   lg:left-[49.5%] -translate-x-1/2 "  />
+          <Image src={graphic} width={1000} alt="" className="opacity-60 absolute w-[300px] md:w-[300px] sm:w-[270px] left-[51%] -translate-y-[120px] lg:-translate-y-14 md:left-[49.5%] md:-translate-y-6 sm:-translate-y-3 sm:left-[50.5%] lg:w-[250px]   lg:left-[49.5%] -translate-x-1/2 "  />
           <Swiper
             className="circular-slider"
             spaceBetween={10}
@@ -178,7 +189,9 @@ const Testimonials = () => {
             loop={true}
             navigation={true} // Added navigation
             modules={[Autoplay, Navigation]}
-            style={{ padding: "0px 0px 200px 0px" }}
+            style={{
+              padding: padding,
+            }}
           >
             {testimonials.map((testimonial, index) => (
               <SwiperSlide key={index}>
