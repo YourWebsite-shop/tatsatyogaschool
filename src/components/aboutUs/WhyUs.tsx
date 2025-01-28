@@ -33,7 +33,7 @@ const WhyUsData = [
 const WhyUs = () => {
   return (
     <div className="relative">
-      <Image src={LeftBottom} alt="Decorative background" className='absolute top-0  left-0 opacity-50 w-44 lg:w-72' />
+      <Image src={LeftBottom} alt="Decorative background" className='absolute top-0  left-0 opacity-50 w-44 lg:w-56 translate-y-44 sm:translate-y-0' />
       <div className=" max-w-[1280px] mx-auto  bg-[#EBE6E2] lg:px-[16px] sm:px-[24px] px-[16px] mb-[80px] ">
       <div className="flex justify-between lg:pb-[28px] sm:pb-[20px] pb-[12px]">
         <h1 className="lg:text-[36px] sm:text-[32px] text-[24px] font-bold " data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">Why Us?</h1>
