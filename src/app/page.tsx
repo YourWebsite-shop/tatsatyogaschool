@@ -14,16 +14,16 @@ import React from "react";
 const Home: React.FC = () => {
   return (
     <div>
-      <Hero />
+      {/* <Hero /> */}
 
-      <AboutUs />
-      <Benefits />
-      <OurClasses />
-      <YogaRetreat />
+      {/* <AboutUs /> */}
+      {/* <Benefits /> */}
+      {/* <OurClasses /> */}
+      {/* <YogaRetreat /> */}
 
-      <Testimonials />
-      <Form />
-      <Faq />
+      {/* <Testimonials /> */}
+      {/* <Form /> */}
+      {/* <Faq /> */}
     </div>
   );
 };
